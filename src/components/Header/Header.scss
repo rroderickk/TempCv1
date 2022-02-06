@@ -1,0 +1,102 @@
+@import '../../vars';
+
+.header {
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > div {
+  margin: 10px;
+}
+.punklogo {
+  width: 100px;
+  height: 50px;
+  border-radius: 9rem;
+}
+.punklogo:hover {
+	box-shadow: 0 0 9em #fff, inset 0 0 9rem #fff, 0 0 0 green;
+  cursor: pointer;
+}
+.searchIcon {
+  width: 24px;
+}
+.searchBar {
+  background-color: #1c1c1e;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.searchIconContainer {
+  margin: 10px;
+}
+.searchInput {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  font-size: 20px;
+  font-family: Inconsolata;
+}
+.searchIconContainer > img {
+  margin-left: 18px;
+}
+.headerItems {
+  display: flex;
+  color: #a1a5b0;
+}
+.headerItems > p {
+  margin: 12px;
+  font-size: 20px;
+}
+.headerItems > p:hover {
+  color: cyan;
+  cursor: pointer;
+}
+.headerActions {
+  display: flex;
+  border-radius: 9rem;
+  align-items: center;
+}
+.headerActions > div {
+  padding: 4px;
+  margin: auto;
+}
+.headerActions > div:hover {
+  cursor: pointer;
+	box-shadow: 0 0 .5rem #fff, inset 0 0 .5rem #fff, 0 0 2rem green;
+}
+.themeSwitchContainer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+  object-fit: contain;
+}
+
+.themeSwitchContainer {
+  height: 25px;
+  border-radius: 8px;
+}
+
+.loginButton {
+  background: linear-gradient(to right, #59f9b7, #66feea);
+  padding: 9px 12px;
+  height: 32px;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1c1c1e;
+  font-family: Inconsolata;
+}
+@media (max-width: 640px) {
+  .punklogo { width: 100px; height: 90px; }
+  .header { display: inline-block; }
+  .searchInput { width: 100%; }
+  .loginButton { padding: 13px 13px; height: 16px; }
+}

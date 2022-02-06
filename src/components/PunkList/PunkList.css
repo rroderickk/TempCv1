@@ -1,0 +1,28 @@
+.punkList {
+  cursor: pointer;
+  display: flex;  
+  overflow: auto;
+  margin-top: 4px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.punkList::-webkit-scrollbar {
+  width: 20px !important;
+  /* //display: none !important; */
+  /* // -ms-overflow-style: none; */
+  /* // scrollbar-width: none; */
+}
+
+.punkList::-webkit-scrollbar:hover {
+  border-bottom: 8px solid white;
+	box-shadow: 0 0 .1rem #fff, inset 0 0 .1rem #fff, 0 0 8rem gold; //!solo hacia arriba
+}
+
+@media (max-width: 640px) {
+  .punkList {
+    display: block;
+    align-items: center;
+    object-fit: contain;
+  }
+}

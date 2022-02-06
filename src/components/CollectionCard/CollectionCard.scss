@@ -1,0 +1,53 @@
+.collectionCard {
+  color: white;
+  background-color: #1a1c1e;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 310px;
+  height: 460px;
+  margin-right: 28px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+.details {
+  padding: 12px;
+}
+.details > div {
+  // border-right: 10rem; 
+  text-align: left; //!text title
+}
+.name {
+  font-size: 20px;
+  font-weight: 900;
+}
+// .name > div {
+//   padding-right: 4em;
+// }
+.id {
+  color: #a1a5b0;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 4px;
+}
+.collectionCard > img {
+  width: 100%;
+}
+.wethImage {
+  height: 24px;
+  padding-left: 4px;
+}
+.priceContainer {
+  display: flex; //! price eth
+  align-items: center;
+  margin-top: 8px;
+  object-fit: contain;
+}
+.price {
+  margin-left: 3px;
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .collectionCard {
+    margin: 32px;
+  }
+}

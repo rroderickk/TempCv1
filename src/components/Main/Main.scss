@@ -1,0 +1,154 @@
+.main {
+  max-height: 50vh;
+  margin-left: 1rem;
+}
+.mainContent {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+.punkHighLight {
+  flex: 0.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.punkContainer {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  margin-right: 20px;
+}
+// .punkContainer > img {
+//   border-radius: 20px;
+//   overflow: hidden;
+//   display: flex;
+//   margin-right: 20px;
+// }
+.selectedPunk {
+  object-fit: contain;
+  max-width: min(30vw, 30vh);
+  max-height: 30vw;
+}
+// .punkDetail {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   flex: 0.75;
+// }
+.title {
+  font-size: 60px;
+  font-weight: 800;
+}
+.itemNumber {
+  color: #a1a5b0;
+  font-size: 72px;
+  align-self: center;
+}
+.owner {
+  display: flex;
+  margin: 10px 0;
+  // height: 50px;
+  align-items: flex-end;
+}
+.owner > div {
+  margin: 0 5px;
+}
+.ownerImageContainer {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border-radius: 50px;
+  overflow: hidden;
+  object-fit: contain;
+  vertical-align: middle; //!zoom
+  transition: 1.5s ease;
+  -moz-transition: 1.5s ease; /* Firefox */
+  -webkit-transition: 1.5s ease; /* Chrome - Safari */
+  -o-transition: 1.5s ease; /* Opera */
+}
+
+.ownerImageContainer:hover { //!zoom
+  transform : scale(4);
+  -moz-transform : scale(4); /* Firefox */
+  -webkit-transform : scale(4); /* Chrome - Safari */
+  -o-transform : scale(4); /* Opera */
+  -ms-transform : scale(4); /* IE9 */
+}
+.ownerImageContainer > img {
+  height: 130%;
+  width: 100%;
+}
+.ownerDetail {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.ownerNameAndHandle {
+  flex: 1;
+}
+.ownerHandle {
+  color: cyan;
+}
+.ownerLink {
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  border-radius: 50px;
+  height: 28px;
+  width: 28px;
+  border: 1px solid #fff;
+  margin: 0 0 0 10px;
+}
+
+.ownerSocialContain {
+  cursor: pointer;
+  display: flex;
+  border-radius: 50px;
+  // border: 1px solid #fff;
+  margin: 0 0 0 10px;
+}
+.ownerSocialContain > img {
+  height: 100%;
+  width: 100%;
+}
+// .ownerLink > img {
+//   height: 100%;
+//   width: 100%;
+// }
+
+
+@media (max-width: 640px) {
+  .mainContent {
+    align-items: center;
+    text-align: center;
+    margin: 20px 14px;
+  }
+  .selectedPunk {
+    width: 0;
+    display: none;
+  }
+  .ownerAdress {
+    color: #fff;
+  }
+  .main {
+    margin: 0;
+  }
+  .title {
+    font-size: 12px;
+    display: flex;
+  }
+  .owner {
+    padding-right: 10px;
+    align-items: center;
+  }
+  .ownerSocialContain {
+    margin: -140px;
+    transform: translate(-45%, 80%);
+    padding: 10px;
+  }
+  .itemNumber {
+    display: none;
+  }
+
+}
