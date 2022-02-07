@@ -15,6 +15,7 @@ return (
           trades={punk.traits}
           image={punk.image_original_url}
           weth={platzi}
+          url={punk.urlPlatzi}
         />
       </div>
     ))}

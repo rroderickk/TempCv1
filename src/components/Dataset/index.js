@@ -1,10 +1,8 @@
-import reacjs     from "./react.png";             import node from "./node.png";
-import javascript from "./javascript.png";        import nest from "./nestjs.png";
+import reacjs     from "./react.png";      import node from "./node.png";
+import javascript from "./javascript.png"; import nest from "./nestjs.png";
 import pythonProfesional     from "./pythonProfesional.png"; import sololearn from "./SoloLearnJavascript.png";
-import closures   from "./closures.png";
-import poo from "./objetos.png";
-import tiempo from "./tiempo.png";
-import py from "./python.png";
+import closures   from "./closures.png";   import poo from "./objetos.png";
+import tiempo from "./tiempo.png";         import py from "./python.png";
 
 const dataset = { assets:
   [ 
