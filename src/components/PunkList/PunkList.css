@@ -12,6 +12,7 @@
   /* //display: none !important; */
   /* // -ms-overflow-style: none; */
   /* // scrollbar-width: none; */
+  z-index:1;
 }
 
 .punkList::-webkit-scrollbar:hover {

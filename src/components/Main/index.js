@@ -27,7 +27,7 @@ return (
 
     <div className="punkDetail" style={{color: "#fff"}}>
       <div className="title"> {activePunk.name} </div>
-      <span className="itemNumber">.#{activePunk.token_id}</span>
+      <span className="itemNumber">#{activePunk.token_id}</span>
     </div>
 
     <div className="owner">
