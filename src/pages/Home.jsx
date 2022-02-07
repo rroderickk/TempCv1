@@ -2,8 +2,6 @@ import Header from "@components/Header"; import CollectionCard from "../componen
 import React, { useState, useEffect } from "react"; import axios from "axios";
 import PunkList from "@components/PunkList"; import Main from "@components/Main";
 import Dataset from "../components/Dataset"
-import jv from "../components/Dataset/javascript.png";
-console.log(Dataset)
 
 const Home = () => {
 const [punkListData, setPunkListData] = useState([]);
@@ -11,22 +9,19 @@ const [selectedPunk, setSelectedPunk] = useState(0)
 
 useEffect( () => { 
   const getMyNft = async() => {
-    // Dataset.assets.map((e)=>setPunkListData(e))
-    setPunkListData(Dataset);
+    setPunkListData(Dataset.assets);
   }
   return getMyNft();
 }, [] );
 
-
-
-useEffect( () => { 
-  const getMyNft = async() => {
-    const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0xC36d211Da64a4cDD727f722196545Ec8799BeD9e&order_direction=asc");
-    console.log(openseaData.data)
-    setPunkListData(openseaData.data.assets)
-  }
-  return getMyNft();
-}, [] );
+/* // useEffect( () => { 
+//   const getMyNft = async() => {
+//     const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0xC36d211Da64a4cDD727f722196545Ec8799BeD9e&order_direction=asc");
+//     console.log(openseaData.data)
+//     setPunkListData(openseaData.data.assets)
+//   }
+//   return getMyNft();
+// }, [] ); */
 
 document.body.style.zoom = "96%"; 
 
@@ -43,14 +38,14 @@ return (
     />
   </React.Fragment>
 )}
-{<CollectionCard 
+{/* {<CollectionCard 
   id={4} 
   name={'BandanaPunk'} 
   trades={[{'value': 2345234567}]} 
   // image="https://lh3.googleusercontent.com/soR6JAuB0k-X3Az9G8-NJG9Cfoc4kyfgPUCYVtp6Ker9QQSHg9UQA52eFduoL_v_E5dHnnaB3LtZjBIAZdH6p5e2rLOm7aVm6eVoMg=s0"
   image={Dataset.assets[0].image_original_url}
   weth="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
-/>}
+/>} */}
 {/* {<CollectionCard 
 {/* {<CollectionCard 
   id={4} 

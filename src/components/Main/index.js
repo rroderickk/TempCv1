@@ -9,8 +9,6 @@ const [activePunk, setActivePunk] = useState(punkListData[0]);
 
 useEffect( () => { setActivePunk(punkListData[selectedPunk]) }, [punkListData, selectedPunk])
 
-// console.log(selectedPunk)
-
 return (
 <div className="main">
   <div className="mainContent">
@@ -26,7 +24,7 @@ return (
     </div>
 
     <div className="punkDetail" style={{color: "#fff"}}>
-      <div className="title"> RodrigoMoreno {activePunk.name} </div>
+      <div className="title"> {activePunk.name} </div>
       <span className="itemNumber">.#{activePunk.token_id}</span>
     </div>
 
@@ -36,7 +34,7 @@ return (
       </div>
       <div className="ownerDetail">
         <div className="ownerNameAndHandle">
-          <div className="ownerAdress">price {activePunk.traits[0].value}</div>
+          <div className="ownerAdress">RodrigoMoreno socialMedia </div>
           <div className="ownerHandle">@cheatmodes4</div>
         </div>
         <div className="ownerSocialContain">

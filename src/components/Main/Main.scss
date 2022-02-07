@@ -19,23 +19,23 @@
   display: flex;
   margin-right: 20px;
 }
-// .punkContainer > img {
-//   border-radius: 20px;
-//   overflow: hidden;
-//   display: flex;
-//   margin-right: 20px;
-// }
+.punkContainer > img {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  margin-right: 20px;
+}
 .selectedPunk {
   object-fit: contain;
   max-width: min(30vw, 30vh);
   max-height: 30vw;
 }
-// .punkDetail {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   flex: 0.75;
-// }
+.punkDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0.75;
+}
 .title {
   font-size: 60px;
   font-weight: 800;
@@ -144,7 +144,7 @@
   }
   .ownerSocialContain {
     margin: -140px;
-    transform: translate(-45%, 80%);
+    transform: translate(-60%, 80%);
     padding: 10px;
   }
   .itemNumber {

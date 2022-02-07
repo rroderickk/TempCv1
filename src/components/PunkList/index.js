@@ -2,8 +2,7 @@ import CollectionCard from "../CollectionCard";
 import "./PunkList.css";
 import platzi from "@logos/platzi.svg";
 
-
-const PunkList = ({ punkListData, setSelectedPunk , jv}) => {
+const PunkList = ({ punkListData, setSelectedPunk }) => {
 
 return (
   <div className="punkList">
