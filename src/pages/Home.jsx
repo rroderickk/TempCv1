@@ -9,6 +9,8 @@ const Home = () => {
 const [punkListData, setPunkListData] = useState([]);
 const [selectedPunk, setSelectedPunk] = useState(0)
 
+console.log(Dataset.assets[0].id ,"$$$$");
+
 useEffect( () => { 
   const getMyNft = async() => {
     setPunkListData(Dataset.assets);

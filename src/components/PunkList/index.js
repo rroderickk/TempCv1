@@ -12,6 +12,7 @@ return (
       <div onClick={() => setSelectedPunk(punk.token_id)}>
         <CollectionCard
           key={punk.id}
+          idinfo={punk.id}
           id={punk.token_id}
           name={punk.name}
           trades={punk.traits}

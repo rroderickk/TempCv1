@@ -10,27 +10,39 @@
   margin-left: 16px;
 }
 .details {
-  padding: 12px;
+  padding: 10px 10px;
 }
-.details > div {
-  // border-right: 10rem; 
-  // text-align: left; //!text title center
-}
+//// .details > div  {
+//   // border-right: 10rem; 
+//   // text-align: left; //!text title center
+//// }
 .name {
   font-size: 20px;
   font-weight: 900;
 }
 // .name > div {
+//   text-align: center;
 //   padding-right: 4em;
 // }
 .id {
   color: #a1a5b0;
   font-size: 20px;
   font-weight: 600;
-  padding-top: 4px;
+  margin-left: 4px;
+  // padding-top: 4px;
+  // display: flex;        //! id
+  display: inline-flex;
+  align-items:center;
+}
+
+.id >p {
+  margin-top: 8px;
+  font-weight: 400;
+  text-align: left;
 }
 .collectionCard > img {
   width: 100%;
+
 }
 .wethImage {
   height: 24px;
@@ -51,14 +63,20 @@
 }
 .priceContainer {
   // display: flex; //! price eth center
-  margin-top: 12px;
+  margin-top: -1px;
   align-content: center;
   object-fit: contain;
+
 }
 .price {
   margin-left: 3px;
   font-weight: 600;
 }
+.idinfo {
+  margin-left: 9px;
+  font-size: 12px; //!textDescription
+}
+
 @media (max-width: 640px) {
   .collectionCard {
     margin: 32px;

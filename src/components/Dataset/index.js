@@ -6,8 +6,8 @@ import tiempo from "./tiempo.png";         import py from "./python.png";
 
 const dataset = { assets:
   [ 
-    { 0: 0, id:0, name:"ReactJs",     token_id:"0", traits:[0],  image_original_url: reacjs    , urlPlatzi:"https://raw.githubusercontent.com/rroderickk/TempCv1/gh-pages/src/components/Dataset/react.png"},
-    { 1: 1, id:1, name:"NodeJs",      token_id:"1", traits:[1],  image_original_url: node      , urlPlatzi: "https://platzi.com/p/rroderickk/curso/1759-fundamentos-node/diploma/detalle/" },
+    { 0: 0, id:"Desarrollar una tienda online con React Llevar un diseño de HTML y CSS a React Crear tu primer sitio web con React.js", name:"ReactJs",     token_id:"0", traits:[0],  image_original_url: reacjs    , urlPlatzi:"https://raw.githubusercontent.com/rroderickk/TempCv1/gh-pages/src/components/Dataset/react.png"},
+    { 1: 1, id:"Conocer los conceptos básicos de Node.js, Cómo manejar la asincronía, Entender los módulos del core, Utilizar los módulos y paquetes externos", name:"NodeJs",      token_id:"1", traits:[1],  image_original_url: node      , urlPlatzi: "https://platzi.com/p/rroderickk/curso/1759-fundamentos-node/diploma/detalle/" },
     { 2: 2, id:2, name:"Javascript",  token_id:"2", traits:[2],  image_original_url: javascript, urlPlatzi:"" },
     { 3: 3, id:3, name:"NestJs",      token_id:"3", traits:[3],  image_original_url: nest      , urlPlatzi:"" },
     { 4: 4, id:4, name:"Python Profesional", token_id:"4", traits:[4], image_original_url: pythonProfesional , urlPlatzi:"" },

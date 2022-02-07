@@ -4,6 +4,7 @@ import "./CollectionCard.scss" //!styles(@)==>
 const openTab =(link)=> window.open(link);
 const CollectionCard = ({ 
   id, 
+  idinfo,
   name,
   trades, 
   image,
@@ -17,7 +18,7 @@ return (
 
   <div className="details">
     <div className="name">
-      {name} <div className="id">.#{id}</div>
+      {name} <div className="id">#{id}       <p className="idinfo">{idinfo}</p></div>
     </div>
     <div className="priceContainer">
       <img className="wethImage"  alt="wethImage" src={weth} onClick={()=>{openTab(url)}} />
