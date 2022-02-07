@@ -9,7 +9,8 @@ const CollectionCard = ({
   trades, 
   image,
   weth,
-  url,
+  urlGh,
+  urlPlatzi,
 }) => {
 
 return (
@@ -21,7 +22,7 @@ return (
       {name} <div className="id">#{id}       <p className="idinfo">{idinfo}</p></div>
     </div>
     <div className="priceContainer">
-      <img className="wethImage"  alt="wethImage" src={weth} onClick={()=>{openTab(url)}} />
+      <img className="wethImage"  alt="wethImage" src={weth} onClick={()=>{openTab(urlPlatzi)}} />
       <div className="price">{trades[0]?.value}</div>
     </div>
   </div>

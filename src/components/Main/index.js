@@ -20,7 +20,7 @@ return (
           alt="selectedPunk"
           // src="https://lh3.googleusercontent.com/soR6JAuB0k-X3Az9G8-NJG9Cfoc4kyfgPUCYVtp6Ker9QQSHg9UQA52eFduoL_v_E5dHnnaB3LtZjBIAZdH6p5e2rLOm7aVm6eVoMg=s0"
           src={activePunk.image_original_url}
-          onClick={()=>openTab(activePunk.urlPlatzi)}
+          onClick={()=>openTab(activePunk.urlGh)}
         />
       </div>
     </div>
