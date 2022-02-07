@@ -1,22 +1,15 @@
-import "./Main.scss";
-import yo from "@logos/ilops.jpg";
-import linkedin from "@icons/linked.svg";
-import github from "@icons/github.svg";
-import twitter from "@icons/twitter.svg";
-import instagram from "@icons/instagram.svg";
-import { useState, useEffect } from "react";
+import "./Main.scss"; import yo from "@logos/ilops.jpg"; import linkedin from "@icons/linked.svg";
+import github from "@icons/github.svg"; import twitter from "@icons/twitter.svg";
+import instagram from "@icons/instagram.svg"; import { useState, useEffect } from "react";
 
 const openTab =(link)=> window.open(link);
 
 const Main = ({ selectedPunk, punkListData }) => { 
 const [activePunk, setActivePunk] = useState(punkListData[0]);
 
-useEffect( () => {
-  setActivePunk(punkListData[selectedPunk])
-}, [punkListData, selectedPunk])
+useEffect( () => { setActivePunk(punkListData[selectedPunk]) }, [punkListData, selectedPunk])
 
 // console.log(selectedPunk)
-
 
 return (
 <div className="main">

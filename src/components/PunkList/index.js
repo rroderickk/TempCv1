@@ -3,13 +3,14 @@ import "./PunkList.css";
 import platzi from "@logos/platzi.svg";
 
 
-const PunkList = ({ punkListData, setSelectedPunk }) => {
+const PunkList = ({ punkListData, setSelectedPunk , jv}) => {
+
 return (
   <div className="punkList">
     {punkListData.map( punk => (
       <div onClick={() => setSelectedPunk(punk.token_id)}>
         <CollectionCard
-          key={punk.toke_id}
+          key={punk.id}
           id={punk.token_id}
           name={punk.name}
           trades={punk.traits}
