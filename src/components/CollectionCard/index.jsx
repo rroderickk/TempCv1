@@ -1,3 +1,4 @@
+import React from "react"; 
 import "./CollectionCard.scss" //!styles(@)==>
 
 const openTab =(link)=> window.open(link);

@@ -1,3 +1,5 @@
+
+import React from "react"; 
 import './Header.scss';
 import punk from "@logos/punk.png";
 import searchIcon from "@icons/searchIcon2.svg";

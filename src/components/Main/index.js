@@ -1,3 +1,5 @@
+
+import React from "react"; 
 import "./Main.scss"; import yo from "@logos/ilops.jpg"; import linkedin from "@icons/linked.svg";
 import github from "@icons/github.svg"; import twitter from "@icons/twitter.svg";
 import instagram from "@icons/instagram.svg"; import { useState, useEffect } from "react";

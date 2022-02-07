@@ -1,3 +1,5 @@
+
+import React from "react"; 
 import CollectionCard from "../CollectionCard";
 import "./PunkList.css";
 import platzi from "@logos/platzi.svg";
