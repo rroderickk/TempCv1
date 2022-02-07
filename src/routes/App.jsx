@@ -11,7 +11,7 @@ const initialState = useInitialState();
 return (
 
   <AppContext.Provider value={initialState} >
-  <BrowserRouter >
+  <BrowserRouter basename="/TempCv1">
     <Layout >
       <Routes >
         <Route exact path="/" element={<Home />} />

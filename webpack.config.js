@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "TempCv1/bundle.js",
     publicPath: "./",
   },
   mode: 'development',
