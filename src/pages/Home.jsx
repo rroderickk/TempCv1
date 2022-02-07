@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Header from "@components/Header"; import CollectionCard from "../components/CollectionCard";
-import React, { useState, useEffect } from "react"; import axios from "axios";
+import { useState, useEffect } from "react"; import axios from "axios";
 import PunkList from "@components/PunkList"; import Main from "@components/Main";
 import Dataset from "../components/Dataset"
 
