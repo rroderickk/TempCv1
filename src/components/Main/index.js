@@ -9,8 +9,7 @@ const openTab =(link)=> window.open(link);
 const Main = ({ selectedPunk, punkListData }) => { 
 const [activePunk, setActivePunk] = useState(punkListData[0]);
 
-useEffect( () => { setActivePunk(punkListData[selectedPunk]) }, [punkListData, selectedPunk])
-
+useEffect( () => { setActivePunk(punkListData[selectedPunk]) }, [punkListData, selectedPunk]);
 return (
 <div className="main">
   <div className="mainContent">
