@@ -2,7 +2,7 @@
   "name": "cv1reactjs",
   "version": "0.0.1",
   "description": "cv1Reactjs",
-  "hompage": "https://rroderickk.github.io/",
+  "hompage": "https://rroderickk.github.io/TempCv1",
   "main": ".src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
