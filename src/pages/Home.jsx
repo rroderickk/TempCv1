@@ -9,32 +9,36 @@ const Home = () => {
 const [punkListData, setPunkListData] = useState([]);
 const [selectedPunk, setSelectedPunk] = useState(0)
 
-console.log(Dataset.assets[0].id ,"$$$$");
+const [selectedU, setSelectedU] = useState("");
+
+console.log(Dataset.assets[0].id ,"$$$$"); //!mejorar publicidad;
 
 useEffect( () => { 
   const getMyNft = async() => {
     setPunkListData(Dataset.assets);
   }
   return getMyNft();
-}, [] );
+}, [selectedU] );
 
-/* // useEffect( () => { 
-//   const getMyNft = async() => {
-//     const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0xC36d211Da64a4cDD727f722196545Ec8799BeD9e&order_direction=asc");
-//     console.log(openseaData.data)
-//     setPunkListData(openseaData.data.assets)
-//   }
-//   return getMyNft();
-// }, [] ); */
+function u() {
+    const getMyNft = async() => {
+      const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0xC36d211Da64a4cDD727f722196545Ec8799BeD9e&order_direction=asc");
+      // console.log(openseaData.data)
+      setPunkListData(openseaData.data.assets)
+    }
+    return getMyNft();
+  getMyNft()
+};
+// u();
 
 document.body.style.zoom = "96%"; 
 
 return (
 <>
-{<Header />}
+{<Header comprarNft={u}/>}
 {punkListData.length > 0 && (
   <React.Fragment>
-    <Main punkListData={punkListData} selectedPunk={selectedPunk}/>
+    <Main punkListData={punkListData} selectedPunk={selectedPunk} />
     <PunkList 
       punkListData={punkListData} 
       key = {punkListData}

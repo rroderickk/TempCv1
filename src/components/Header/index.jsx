@@ -1,4 +1,3 @@
-
 import React from "react"; 
 import './Header.scss';
 import punk from "@logos/punk.png";
@@ -8,7 +7,7 @@ import switchlogo from "@icons/switch.svg";
 const haha = () => alert("hell yeah proximamente....!");
 const handleRef = (param) => window.scrollTo(0, param);
 
-const Header = () => { return (
+const Header = ({comprarNft}) => { return (
 <>
 <div className='header'>
 
@@ -25,7 +24,7 @@ const Header = () => { return (
 
   <div className='headerItems'>
     <p onClick={()=> handleRef(1000)} >Drops</p>
-    <p onClick={()=> handleRef(40)} >MarketPlace</p>
+    <p onClick={()=> { comprarNft(); handleRef(1000)} } >MarketPlace</p>
     <p onClick={()=>haha()}>Create</p>
       <div className='headerActions'>
         <div className='themeSwitchContainer'>
