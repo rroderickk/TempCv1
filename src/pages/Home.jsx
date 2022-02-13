@@ -7,8 +7,7 @@ import Dataset from "../components/Dataset"
 
 const Home = () => {
 const [punkListData, setPunkListData] = useState([]);
-const [selectedPunk, setSelectedPunk] = useState(0)
-
+const [selectedPunk, setSelectedPunk] = useState(9);
 const [selectedU, setSelectedU] = useState("");
 
 console.log(Dataset.assets[0].id ,"$$$$"); //!mejorar publicidad;

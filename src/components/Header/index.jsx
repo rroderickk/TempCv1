@@ -7,7 +7,6 @@ import switchlogo from "@icons/switch.svg";
 const haha =()=> alert("hell yeah proximamente....!");
   const handleRef =(param)=> { 
     window.scrollTo(0, param);
-    alert("if you Allow Cors, can check API works");
   };
 
 const Header =({ comprarNft })=> { return (
@@ -24,7 +23,7 @@ const Header =({ comprarNft })=> { return (
   </div>
   <div className="headerItems">
     <p onClick={()=> handleRef(1000)} >Drops</p>
-    <p onClick={()=> { comprarNft(); handleRef(1000)} } >MarketPlace</p>
+    <p onClick={()=> { event.preventDefault(); comprarNft(); handleRef(1000); alert("if you Allow Cors, can check API works")} } >MarketPlace</p>
     <p onClick={()=>haha()}>Create</p>
       <div className="headerActions">
         <div className="themeSwitchContainer">

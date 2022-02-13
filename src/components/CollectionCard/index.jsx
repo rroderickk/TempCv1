@@ -9,20 +9,19 @@ const CollectionCard = ({
   trades, 
   image,
   weth,
-  urlGh,
   urlPlatzi,
 }) => {
 
 return (
 <div className="collectionCard">
-  <img className="imageCard" alt="coleccionImageCard"  src={image} />
+  <img className="imageCard" alt="coleccionImageCard" src={image} />
 
   <div className="details">
     <div className="name">
-      {name} <div className="id">#{id}       <p className="idinfo">{idinfo}</p></div>
+      {name} <div className="id">#{id}  <p className="idinfo">{idinfo}</p></div>
     </div>
     <div className="priceContainer">
-      <img className="wethImage"  alt="wethImage" src={weth} onClick={()=>{openTab(urlPlatzi)}} />
+      <img className="wethImage"  alt="wethImage" src={weth} onClick={()=>openTab(urlPlatzi)}/>
       <div className="price">{trades[0]?.value}</div>
     </div>
   </div>
