@@ -1,6 +1,5 @@
 import React from "react"; 
 import "./CollectionCard.scss" //!styles(@)==>
-
 const openTab =(link)=> window.open(link);
 const CollectionCard = ({ 
   id, 
@@ -10,15 +9,16 @@ const CollectionCard = ({
   image,
   weth,
   urlPlatzi,
+  idInfoENG, 
 }) => {
 
 return (
 <div className="collectionCard">
   <img className="imageCard" alt="coleccionImageCard" src={image} />
-
   <div className="details">
     <div className="name">
-      {name} <div className="id">#{id}  <p className="idinfo">{idinfo}</p></div>
+      {name} <div className="id">#{id}  
+      <p className="idinfo">{typeof(idinfo)==="number"?idinfo:idInfoENG}</p></div>
     </div>
     <div className="priceContainer">
       <img className="wethImage"  alt="wethImage" src={weth} onClick={()=>openTab(urlPlatzi)}/>

@@ -1,12 +1,9 @@
-
 import React from "react"; 
 import CollectionCard from "../CollectionCard";
 import "./PunkList.css";
 import platzi from "@logos/platzi.svg";
 
-const PunkList = ({ punkListData, setSelectedPunk }) => {
-
-return (
+const PunkList = ({ punkListData, setSelectedPunk }) => { return (
   <div className="punkList">
     {punkListData.map( punk => (
       <div onClick={() => setSelectedPunk(punk.token_id)}>
@@ -20,6 +17,7 @@ return (
           weth={platzi}
           urlGh={punk.urlGh}
           urlPlatzi={punk.urlPlatzi}
+          idInfoENG={punk.idENG}
         />
       </div>
     ))}
