@@ -53,7 +53,7 @@ const dataset =
     id: "Learn all the basic features of JavaScript, including making your website more interactive, changing website content, validating forms, and so much more.",
     name: "JsSoloLearn", token_id: "6", traits: [6], image_original_url: sololearn,
     urlPlatzi: "https://www.sololearn.com/learning/1024",
-    urlGh:"https://github.com/rroderickk/TempCv1/blob/gh-pages/src/components/Dataset/objetos.png?raw=true",
+    urlGh:"https://github.com/rroderickk/TempCv1/blob/gh-pages/src/components/Dataset/SoloLearnJavascript.png?raw=true",
   },
   {
     7: 7,
