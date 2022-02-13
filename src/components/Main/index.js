@@ -6,7 +6,7 @@ import instagram from "@icons/instagram.svg"; import { useState, useEffect } fro
 
 const openTab =(link)=> window.open(link);
 
-const Main = ({ selectedPunk, punkListData , u}) => { 
+const Main = ({ selectedPunk, punkListData }) => { 
 const [activePunk, setActivePunk] = useState(punkListData[0]);
 
 useEffect( () => { setActivePunk(punkListData[selectedPunk]) }, [punkListData, selectedPunk]);
@@ -19,7 +19,7 @@ return (
           alt="selectedPunk"
           // src="https://lh3.googleusercontent.com/soR6JAuB0k-X3Az9G8-NJG9Cfoc4kyfgPUCYVtp6Ker9QQSHg9UQA52eFduoL_v_E5dHnnaB3LtZjBIAZdH6p5e2rLOm7aVm6eVoMg=s0"
           src={activePunk.image_original_url}
-          onClick={()=>openTab(activePunk.urlGh)}
+          onClick={activePunk.urlGh?()=>openTab(activePunk.urlGh):null}
         />
       </div>
     </div>

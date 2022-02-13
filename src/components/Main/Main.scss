@@ -78,6 +78,7 @@
   -webkit-transform : scale(4); /* Chrome - Safari */
   -o-transform : scale(4); /* Opera */
   -ms-transform : scale(4); /* IE9 */
+  z-index: 1;
 }
 .ownerImageContainer > img {
   height: 120%;

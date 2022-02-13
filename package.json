@@ -23,7 +23,7 @@
   "author": "CheatModes4 rroderickk@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rroderickk/TempCv1"
+    "url": "https://github.com/rroderickk/TempCv1/issues"
   },
   "dependencies": {
     "@babel/core": "7.16.12",

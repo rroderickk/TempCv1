@@ -38,11 +38,7 @@ return (
 {punkListData.length > 0 && (
   <React.Fragment>
     <Main punkListData={punkListData} selectedPunk={selectedPunk}/>
-    <PunkList 
-      punkListData={punkListData} 
-      key={punkListData}
-      setSelectedPunk={setSelectedPunk}
-    />
+    <PunkList punkListData={punkListData} key={punkListData} setSelectedPunk={setSelectedPunk} />
   </React.Fragment>
 )}
 </>
