@@ -27,7 +27,7 @@ function u() {
       setPunkListData(openseaData.data.assets)
     }
     return getMyNft();
-  getMyNft()
+  // getMyNft()
 };
 // u();
 
@@ -38,10 +38,10 @@ return (
 {<Header comprarNft={u}/>}
 {punkListData.length > 0 && (
   <React.Fragment>
-    <Main punkListData={punkListData} selectedPunk={selectedPunk} />
+    <Main punkListData={punkListData} selectedPunk={selectedPunk}/>
     <PunkList 
       punkListData={punkListData} 
-      key = {punkListData}
+      key={`${punkListData[1].token_id}`*Math.random()}
       setSelectedPunk={setSelectedPunk}
     />
   </React.Fragment>

@@ -11,7 +11,7 @@ return (
     {punkListData.map( punk => (
       <div onClick={() => setSelectedPunk(punk.token_id)}>
         <CollectionCard
-          key={punk.id}
+          keys={`${punk.token_id}`*Math.random()}
           idinfo={punk.id}
           id={punk.token_id}
           name={punk.name}

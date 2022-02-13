@@ -22,7 +22,7 @@
 
 @media (max-width: 640px) {
   .punkList {
-    display: block;
+    /* display: block; */
     align-items: center;
     object-fit: contain;
   }

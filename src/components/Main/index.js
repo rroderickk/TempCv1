@@ -1,6 +1,6 @@
 
 import React from "react"; 
-import "./Main.scss"; import yo from "@logos/ilops.jpg"; import linkedin from "@icons/linked.svg";
+import "./Main.scss"; import yo from "@logos/il.jpg"; import linkedin from "@icons/linked.svg";
 import github from "@icons/github.svg"; import twitter from "@icons/twitter.svg";
 import instagram from "@icons/instagram.svg"; import { useState, useEffect } from "react";
 
@@ -23,12 +23,10 @@ return (
         />
       </div>
     </div>
-
     <div className="punkDetail" style={{color: "#fff"}}>
       <div className="title"> {activePunk.name} </div>
       <span className="itemNumber">#{activePunk.token_id}</span>
     </div>
-
     <div className="owner">
       <div className="ownerImageContainer">
         <img src={yo} alt="ownerImageContainer" className="yo"/>
@@ -50,7 +48,6 @@ return (
         </div>
       </div>
     </div>
-    
   </div>
 </div>
 ); }; export default Main;
