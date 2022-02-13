@@ -37,11 +37,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // flex: 0.75;
+  flex: 1.75;
   align-items: center;
 }
 .title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
 }
 .itemNumber {
@@ -51,6 +51,7 @@
 }
 .owner {
   display: flex;
+  justify-content: center;
   margin: 10px 0;
   // height: 50px;
   align-items: flex-end;
@@ -112,6 +113,7 @@
   border-radius: 50px;
   // border: 1px solid #fff;
   margin: 0 0 0 10px;
+  flex: 1.3;
 }
 .ownerSocialContain > img {
   height: 100%;
@@ -143,6 +145,7 @@
   .title {
     font-size: 12px;
     display: flex;
+    flex: 1.3;
   }
   .owner {
     padding-right: 10px;
