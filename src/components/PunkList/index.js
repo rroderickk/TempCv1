@@ -3,12 +3,12 @@ import CollectionCard from "../CollectionCard";
 import "./PunkList.css";
 import platzi from "@logos/platzi.svg";
 
-const PunkList = ({ punkListData, setSelectedPunk }) => { return (
+const PunkList =({ punkListData, setSelectedPunk })=> { return (
   <div className="punkList">
-    {punkListData.map( punk => (
-      <div onClick={() => setSelectedPunk(punk.token_id)}>
+    {punkListData.map( punk=> (
+      <div onClick={()=> setSelectedPunk(punk.token_id)} key={punk.token_id}>
         <CollectionCard
-          keys={`${punk.token_id}`*Math.random()}
+          key={punk.token_id}
           idinfo={punk.id}
           id={punk.token_id}
           name={punk.name}

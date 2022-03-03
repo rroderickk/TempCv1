@@ -11,7 +11,6 @@ const CollectionCard = ({
   urlPlatzi,
   idInfoENG, 
 }) => {
-
 return (
 <div className="collectionCard">
   <img className="imageCard" alt="coleccionImageCard" src={image} />

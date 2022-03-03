@@ -10,7 +10,7 @@ const [punkListData, setPunkListData] = useState([]);
 const [selectedPunk, setSelectedPunk] = useState(0);
 const [selectedU, setSelectedU] = useState("");
 
-console.log(Dataset.assets[0].id ,"$$$$"); //todo mejorar publicidad;
+// console.log(Dataset.assets[0].id ,"$$$$"); //todo mejorar publicidad;
 
 useEffect( () => { 
   const getMyNft = async() => {
@@ -30,15 +30,13 @@ function u() {
 };
 // u();
 
-document.body.style.zoom = "96%"; 
-
 return (
 <>
-{<Header comprarNft={u}/>}
-{punkListData.length > 0 && (
+{<Header comprarNft={u} />}
+{punkListData.length>0 && (
   <React.Fragment>
     <Main punkListData={punkListData} selectedPunk={selectedPunk}/>
-    <PunkList punkListData={punkListData} key={punkListData} setSelectedPunk={setSelectedPunk} />
+    <PunkList punkListData={punkListData} setSelectedPunk={setSelectedPunk} />
   </React.Fragment>
 )}
 </>
