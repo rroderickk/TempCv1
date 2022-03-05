@@ -2,6 +2,6 @@ import React from "react";
 
 import "./Layout.scss";
 
-const Layout =({ children })=> <div className="Layout">{children}</div> 
+const Layout =({ children })=> <body className="Layout">{children}</body> 
 
 export default Layout;
