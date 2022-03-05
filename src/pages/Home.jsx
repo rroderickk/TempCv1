@@ -1,9 +1,10 @@
 
-import React from 'react';
+import React from "react";
 import Header from "@components/Header"; import CollectionCard from "../components/CollectionCard";
 import { useState, useEffect } from "react"; import axios from "axios";
 import PunkList from "@components/PunkList"; import Main from "@components/Main";
-import Dataset from "../components/Dataset"
+import Dataset from "../components/Dataset";
+import Projects from "../components/Projects";
 
 const Home = () => {
 const [punkListData, setPunkListData] = useState([]);
@@ -39,5 +40,7 @@ return (
     <PunkList punkListData={punkListData} setSelectedPunk={setSelectedPunk} />
   </React.Fragment>
 )}
+{<Projects/>}
 </>
+
 ); }; export default Home;

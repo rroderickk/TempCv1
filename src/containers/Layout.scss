@@ -7,6 +7,13 @@
   margin: 0;
   max-width: 100vp;
 }
+*{
+  scroll-behavior: smooth;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);/* rgba(0,0,0,0.004) */
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
 
 // .Layout > div:hover {
 // 	box-shadow: 0 0 9em #fff, inset 0 0 9rem #fff, 0 0 0 green;

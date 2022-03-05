@@ -1,7 +1,7 @@
 import React from "react"; 
 import CollectionCard from "../CollectionCard";
-import "./PunkList.css";
 import platzi from "@logos/platzi.svg";
+import "./PunkList.css";
 
 const PunkList =({ punkListData, setSelectedPunk })=> { return (
   <div className="punkList">

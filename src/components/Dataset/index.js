@@ -3,6 +3,7 @@ import javascript from "./javascript.png";               import nest from "./nes
 import pythonProfesional from "./pythonProfesional.png"; import sololearn from "./SoloLearnJavascript.png";
 import closures from "./closures.png";                   import poo from "./objetos.png";
 import tiempo from "./tiempo.png";                       import py from "./python.png";
+import responsive from "./mobilefirst.png"
 
 const dataset = 
 { assets: 
@@ -85,5 +86,13 @@ const dataset =
     name: "Python", token_id: "9", traits: [9], image_original_url: py,
     urlPlatzi: "https://platzi.com/cursos/python/",
     urlGh:"https://github.com/rroderickk/TempCv1/blob/gh-pages/src/components/Dataset/python.png?raw=true",
+  },
+  {
+    10: 10,
+    id: "Crear y aplicar estilos con CSS que se puedan reutilizar Realizar una auditoría con Lighthouse Aplicar media queries para adaptar vistas de dispositivos Analizar la arquitectura de tu proyecto partiendo de un wireframe",
+    idENG: "Create and apply reusable CSS styles Perform an audit with Lighthouse Apply media queries to adapt device views Analyze your project architecture from a wireframe",
+    name: "Responsive Design", token_id: "10", traits: [10], image_original_url: responsive,
+    urlPlatzi: "https://platzi.com/cursos/mobile-first/",
+    urlGh:"",
   },
 ],}; export default dataset;

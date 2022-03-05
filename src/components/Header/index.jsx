@@ -16,7 +16,7 @@ const Header =({ comprarNft })=> { return ( <>
     <div className="searchIconContainer">
       <img src={searchIcon} className="searchIcon" alt="searchIcon"/>
     </div>
-    <input className="searchInput" placeholder="search..." autoFocus/>
+    <input className="searchInput" placeholder="search...under construction...soon" autoFocus/>
   </div>
   <div className="headerItems">
     <p onClick={()=> handleRef(1000)} >Drops</p>
