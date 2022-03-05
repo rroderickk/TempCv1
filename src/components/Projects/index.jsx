@@ -13,9 +13,9 @@ const Projects =()=> { return ( <>
 <a className="a--container" href="https://rroderickk.github.io/reactPractico" target="_blank" rel="noreferrer noopener">
   <span className="a--reactpractico" /> 
 </a>
-{/* <a className="a--container" href="https://github.com/rroderickk/nodemachine" target="_blank" rel="noreferrer noopener">
-  <span className="a--nodemachine" /> 
-</a> */}
+<a className="a--container" href="https://github.com/rroderickk/nodemachine" target="_blank" rel="noreferrer noopener">
+  <span className="a--nodemachine"></span> 
+</a>
 {/* <a className="a--container" href="https://github.com/rroderickk/matrixResolutions" target="_blank" rel="noreferrer noopener">
   <span className="a--mresolutions" /> 
 </a> */}

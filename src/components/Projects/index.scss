@@ -26,7 +26,40 @@ footer span{
   background-color: forestgreen; 
 };
 .a--reactpractico:hover{  background-color: cyan; };
+.a--nodemachine{ background-image: url("@logos/NodeMachine.svg");  
+  background-color: greenyellow;
+  border-radius: 100%;
+}
+.a--nodemachine:hover{
+  animation-name: parpadeo;
+  animation-duration: .01s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 0.001s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  box-shadow: -2px 2px 40px rgb(255, 215, 112), 0 0 80px #a945c7;
+  overflow: hidden;
+}
 
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
 @media screen and (min-width: 900px){
   .footer--container{
     flex-direction: row;
