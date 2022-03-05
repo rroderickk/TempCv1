@@ -67,7 +67,7 @@ const dataset =
     7: 7,
     id: "Comprende cómo funcionan los objetos en JavaScript. Descubre las ventajas de utilizar POO.  Ordena tu código con abstracción y encapsulamiento.  Reutiliza tu código con herencia y polimorfismo.",
     idENG: "Objects in JavaScript. advantages of using OOP. abstraction and encapsulation. Reuse code with inheritance and polymorphism.",
-    name: "POO", token_id: "7", traits: [7], image_original_url: poo,
+    name: "OOP", token_id: "7", traits: [7], image_original_url: poo,
     urlPlatzi: "https://platzi.com/cursos/javascript-poo/",
     urlGh:"https://github.com/rroderickk/TempCv1/blob/gh-pages/src/components/Dataset/objetos.png?raw=true",
   },
