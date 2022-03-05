@@ -11,8 +11,8 @@
 }
 footer span{
   display: inline-block;
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -69,6 +69,26 @@ footer span{
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
+.mcontenedor{
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  max-width: 130px;
+  max-height: 130px;
+  background-color:dodgerblue;
+  border-radius: 100%;
+}
+
+.mcontenedor:hover{ background-color: blueviolet; }
+
+.a--mresolutions { 
+  border-radius: 0;
+  margin-top: 14px;
+  margin-left: -4px;
+  height: 70%;
+  background-image: url("@logos/vscode.svg"); 
+};
+
 @media screen and (min-width: 900px){
   .footer--container{
     flex-direction: row;
