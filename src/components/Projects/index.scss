@@ -7,6 +7,7 @@
   padding: 2.0rem;
   padding-bottom: 2rem;
   color: white;
+  gap: 4rem;
 }
 footer span{
   display: inline-block;
@@ -16,19 +17,26 @@ footer span{
   background-size: auto;
   background-position: center;
   cursor: pointer;
+  border-radius: 100%;
 }
 
-.a--firstapp1{ background-image: url("@logos/TodoMachineIconWb.svg"); }
+.a--firstapp1{ background-image: url("@logos/TodoMachineIconWb.svg");  
+  background-color: cyan;
+};
 .a--firstapp1:hover{ background-image: url("@logos/TodoMachineIcon.svg"); }
-.a--papapabit{ background-image: url("@logos/papapabit.svg"); }
-.a--papapabit:hover{  background-color: crimson; border-radius: 100%; } 
-.a--reactpractico{ background-image: url("@logos/reactpractico.svg"); border-radius: 100%; 
+
+.a--papapabit{ background-image: url("@logos/papapabit.svg"); 
+  background-color: white; 
+}
+
+.a--papapabit:hover{  background-color: crimson; } 
+
+.a--reactpractico{ background-image: url("@logos/reactpractico.svg"); 
   background-color: forestgreen; 
 };
 .a--reactpractico:hover{  background-color: cyan; };
 .a--nodemachine{ background-image: url("@logos/NodeMachine.svg");  
   background-color: greenyellow;
-  border-radius: 100%;
 }
 .a--nodemachine:hover{
   animation-name: parpadeo;
@@ -41,6 +49,7 @@ footer span{
   -webkit-animation-iteration-count: infinite;
   box-shadow: -2px 2px 40px rgb(255, 215, 112), 0 0 80px #a945c7;
   overflow: hidden;
+  background-color: black;
 }
 
 @-moz-keyframes parpadeo{  
@@ -63,5 +72,6 @@ footer span{
 @media screen and (min-width: 900px){
   .footer--container{
     flex-direction: row;
+    gap: 0;
   }
 }
