@@ -35,6 +35,7 @@ footer span{
   background-color: forestgreen; 
 };
 .a--reactpractico:hover{  background-color: cyan; };
+
 .a--nodemachine{ background-image: url("@logos/NodeMachine.svg");  
   background-color: greenyellow;
 }
@@ -88,6 +89,26 @@ footer span{
   height: 70%;
   background-image: url("@logos/vscode.svg"); 
 };
+.cprofessional{
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  max-width: 130px;
+  max-height: 130px;
+  background-color: crimson;
+  border-radius: 100%;
+}
+.a--professional{
+  background-color: crimson;
+  width: 120%;
+  margin-left: -13px;
+  margin-top: -5px;
+  border-radius: 0;
+  background-image: url("@logos/logotipoR.png");
+  background-size: contain ;
+}
+
+.a--professional:hover{ background-image: url("@logos/logotipoR1.png"); }
 
 @media screen and (min-width: 900px){
   .footer--container{

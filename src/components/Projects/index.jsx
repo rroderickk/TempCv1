@@ -19,5 +19,9 @@ const Projects =()=> { return ( <>
 <a className="a--container" href="https://github.com/rroderickk/matrixResolutions" target="_blank" rel="noreferrer noopener">
   <div className="mcontenedor"><span className="a--mresolutions" /></div>
 </a>
+<a className="a--container" href="https://rroderickk.github.io/professional" target="_blank" rel="noreferrer noopener">
+  <div className="cprofessional"><span className="a--professional" /></div>
+</a>
 </footer>
+
 </> ) }; export default Projects;
