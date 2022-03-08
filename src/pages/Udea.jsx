@@ -31,7 +31,7 @@ const Udea =()=> { return ( <>
     <SectionProgramacion/> 
     <SectionProgramacionFooter/> 
 
-<div>
+{/* <div>
   <img style={{maxWidth: "375px"}} src={prueba} alt="prueba" />
 </div>
 
@@ -40,7 +40,7 @@ const Udea =()=> { return ( <>
 </div>
 <div style={{marginTop: "980px"}}>
   <img style={{maxWidth: "775px"}} src={ejemplo2} alt="prueba" />
-</div>
+</div> */}
 
 
 
