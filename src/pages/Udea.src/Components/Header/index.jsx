@@ -24,12 +24,12 @@ const Header =()=> { return ( <>
 <header>
   <nav className="Navbar-Fixed">
   <img className="Navbar-logo" src={navbarlogo} alt="Navbar-logo"/>
-  {/* <div className="Navbar-container">
+  <div className="Navbar-container">
     <ul className="Navbar-ul">
       <li className="Navbar-li"><a href="#">Inicio</a></li>
       <li className="Navbar-li"><a href="#">Programacion</a></li> 
     </ul>
-  </div> */}
+  </div>
   <div className="dropdown">
     <button className="hamburguesa" onClick={()=>myFunction()} className="dropbtn">
     </button>

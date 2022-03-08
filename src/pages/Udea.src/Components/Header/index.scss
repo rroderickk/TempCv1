@@ -20,17 +20,23 @@ nav{
   margin-left: 1rem;
 }
 .Navbar-container{
-  display: flex;
+  display: none;
   flex-direction: row;
+  color: white;
+  text-decoration: none;
 }
 .Navbar-ul{
+  display: none;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 .Navbar-li{
+  display: none;
   padding: 0 0.4rem;
+  color: white;
+  text-decoration: none;
 }
 button{
   position: relative;
@@ -88,6 +94,40 @@ button{
 .show {display:block;}
 
 @media screen and (min-width: 736px){
-  button{ left: -100px; }
+  button{ display: none; left: -100px; }
   .dropdown-content { left: -220px; }
+  .Navbar-container{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 100vp;
+    // margin-right: -40rem;
+  }
+
+  .Navbar-ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .Navbar-li{
+    display: flex;
+    padding: 0 0.4rem;
+  }
+  .Navbar-logo{
+    margin-left: 4rem;
+  }
+  nav{
+    justify-content: space-between;
+  }
+  a{
+    position: inline-block;
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: var(--grisUdea);
+  }
 }

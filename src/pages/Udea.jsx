@@ -7,6 +7,7 @@ import SectionProgramacion from "./Udea.src/Components/SectionProgramacion";
 /* Temporales */
 import prueba from "./Udea.src/prueba.png";
 import ejemplo from "./Udea.src/celular.png";
+import ejemplo2 from "./Udea.src/escritorio.png";
 import background from "./Udea.src/fondo.png";
 const style={
   backgroundImage: `url(${background})`,
@@ -31,10 +32,13 @@ const Udea =()=> { return ( <>
 {/* <div>
   <img style={{maxWidth: "375px"}} src={prueba} alt="prueba" />
 </div> */}
-
+{/* 
 <div style={{marginTop: "980px"}}>
-  <img style={{maxWidth: "375px"}} src={ejemplo} alt="prueba" />
+  <img style={{maxWidth: "875px"}} src={ejemplo} alt="prueba" />
 </div>
+<div style={{marginTop: "980px"}}>
+  <img style={{maxWidth: "775px"}} src={ejemplo2} alt="prueba" />
+</div> */}
 
 
 
