@@ -3,7 +3,6 @@ import "./index.scss";
 import inicio from "../../cabezote-inicio.png";
 
 const SectionInicio =()=> { return ( <>
-<div>
 
 <section className="section-inicio">
   <div className="section-inicio--imgContainer">
@@ -13,6 +12,5 @@ const SectionInicio =()=> { return ( <>
   </div>
 </section>
 
-</div>
 
 </> ) }; export default SectionInicio;
