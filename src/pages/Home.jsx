@@ -1,4 +1,3 @@
-
 import React from "react";
 import Header from "@components/Header"; import CollectionCard from "../components/CollectionCard";
 import { useState, useEffect } from "react"; import axios from "axios";

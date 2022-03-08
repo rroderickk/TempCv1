@@ -107,8 +107,32 @@ footer span{
   background-image: url("@logos/logotipoR.png");
   background-size: contain ;
 }
-
 .a--professional:hover{ background-image: url("@logos/logotipoR1.png"); }
+.cudea{
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  max-width: 130px;
+  max-height: 130px;
+  background-color: var(--udea);
+  border-radius: 100%;
+}
+.a--udea{ 
+  width: 120%;
+  background-image: url("../../pages/Udea.src/integratic_logo.png");
+  width: 80%;
+  margin-left: -4px;
+  margin-top: -5px;
+  border-radius: 0;
+  background-size: contain ;
+}
+.cudea:hover{
+  background-color: var(--oscuroUdea);
+  box-shadow: -2px 2px 40px var(--udea), 0 0 80px #a945c7;
+}
+
+
+
 
 @media screen and (min-width: 900px){
   .footer--container{

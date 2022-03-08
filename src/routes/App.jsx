@@ -5,6 +5,7 @@ import useInitialState from "@hooks/useInitialState";
 import Layout from "@containers/Layout";
 import Home from "@pages/Home";
 import NotFound from "@pages/NotFound";
+import Udea from "@pages/Udea";
 
 const App = () => {
 const initialState = useInitialState();
@@ -17,6 +18,7 @@ return (
     <Layout >
       <Routes >
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/udea" element={<Udea />} />
 
         {/* //todo ¡¡ InsertRoutes here !! */}
 

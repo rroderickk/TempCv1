@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./index.scss";
 
 const Projects =()=> { return ( <> 
@@ -22,6 +24,10 @@ const Projects =()=> { return ( <>
 <a className="a--container" href="https://rroderickk.github.io/professional" target="_blank" rel="noreferrer noopener">
   <div className="cprofessional"><span className="a--professional" /></div>
 </a>
+<Link className="a--container" to="/udea">
+  <div className="cudea"><span className="a--udea" /></div>
+</Link>
+
 </footer>
 
 </> ) }; export default Projects;

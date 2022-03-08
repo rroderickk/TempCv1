@@ -1,0 +1,31 @@
+.section-inicio{
+  // outline: 1px solid red;
+  position: relative;
+  top: 40px;
+  z-index: 0;
+  width: 100vp;
+  height: 340px;
+  margin-top: 20px;
+  background-image: url("../../cabezote-inicio.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+  min-width: 280px;
+  max-width: 900px;
+}
+.section-inicio--videocontainer{
+  width: 100%;
+  // outline: 1px solid red;
+}
+.section-inicio--video{
+  position: relative;
+  left: 0;
+  top: 160px;
+  width: 90%;
+}
+@media screen and (min-width: 736px){
+  .section-inicio{
+    background-size: cover;
+    max-width: 100%;
+  }
+}

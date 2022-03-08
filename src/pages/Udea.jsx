@@ -1,0 +1,43 @@
+import React from "react";
+import Header from "./Udea.src/Components/Header";
+import Layout from "@containers/Layout";
+import SectionInicio from "./Udea.src/Components/SectionInicio";
+import SectionProgramacion from "./Udea.src/Components/SectionProgramacion";
+
+/* Temporales */
+import prueba from "./Udea.src/prueba.png";
+import ejemplo from "./Udea.src/celular.png";
+import background from "./Udea.src/fondo.png";
+const style={
+  backgroundImage: `url(${background})`,
+  height: "100vp",
+  width: "100%",
+  minWidth: "280px",
+  backgroundAttachment: "fixed",
+  position: "absolute",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+}
+
+const Udea =()=> { return ( <>
+
+<div style={style}>
+  <Header/>
+
+    <SectionInicio/>
+    <SectionProgramacion/> 
+
+{/* <div>
+  <img style={{maxWidth: "375px"}} src={prueba} alt="prueba" />
+</div> */}
+
+<div style={{marginTop: "980px"}}>
+  <img style={{maxWidth: "375px"}} src={ejemplo} alt="prueba" />
+</div>
+
+
+
+
+</div>
+</> ) }; export default Udea;
