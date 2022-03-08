@@ -1,5 +1,5 @@
 .section-inicio{
-  outline: 1px solid red;
+  // outline: 1px solid red;
   position: relative;
   top: 40px;
   z-index: 0;
@@ -29,15 +29,16 @@
     max-width: 100%;
     max-height: 100%;
     height: 480px;
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
   .section-inicio--videocontainer{
   }
   .section-inicio--video{
     width: 460px;
     height: 290px;
-    outline: 1px solid red;
-    margin-left: 38rem;
-    top: 555px;
+    // outline: 1px solid red;
+    left: 310px;
+    // position: relative;
+    top: 540px;
   }
 }

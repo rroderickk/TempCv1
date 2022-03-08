@@ -31,11 +31,11 @@ const Header =()=> { return ( <>
     </ul>
   </div>
   <div className="dropdown">
-    <button className="hamburguesa" onClick={()=>myFunction()} className="dropbtn">
+    <button onClick={()=>myFunction()} className="dropbtn hamburguesa">
     </button>
     <div id="myDropdown" className="dropdown-content">
-      <a href="#">Inicio</a>
-      <a href="#">Programacion</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#programacion">Programacion</a>
     </div>
   </div>
   </nav>

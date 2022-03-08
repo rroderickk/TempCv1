@@ -32,8 +32,8 @@ const Udea =()=> { return ( <>
 {/* <div>
   <img style={{maxWidth: "375px"}} src={prueba} alt="prueba" />
 </div> */}
-{/* 
-<div style={{marginTop: "980px"}}>
+
+{/* <div style={{marginTop: "980px"}}>
   <img style={{maxWidth: "875px"}} src={ejemplo} alt="prueba" />
 </div>
 <div style={{marginTop: "980px"}}>
