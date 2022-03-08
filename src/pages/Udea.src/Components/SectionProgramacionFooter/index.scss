@@ -21,6 +21,12 @@ div .footer-container--banner{
   box-shadow: 1px 1px 5px black;
   border-radius: 22px;
 }
+.card:hover{
+  margin: 0 -40px;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
 
 @media screen and (min-width: 736px) {
   div .footer-container--banner{
@@ -36,8 +42,5 @@ div .footer-container--banner{
   .card{
     width: 80%;
     margin: 0 -40px;
-  }
-  .card3{
-    transform: scale(1.14);
   }
 }
