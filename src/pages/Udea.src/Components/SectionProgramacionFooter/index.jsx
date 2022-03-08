@@ -5,7 +5,7 @@ import card2 from "../../programacion-boton2.png";
 import card3 from "../../programacion-boton3.png";
 import "./index.scss";
 
-const SectionProgramacionFooter = () => { return ( <>
+const SectionProgramacionFooter =()=> { return ( <>
 
 <div id="programacion">
   <div className="footer-container--banner">

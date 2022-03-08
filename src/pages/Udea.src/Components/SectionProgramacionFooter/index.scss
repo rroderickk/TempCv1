@@ -2,6 +2,8 @@ div .footer-container--banner{
   width: 100vp;
   margin-top: 4px;
   padding-bottom: 10px;
+  box-shadow: rgb(0 0 0 / 28%) -4px -4px 4px;
+  border-radius: 22px;
 }
 .footer-banner{
   width: 100%;
@@ -12,20 +14,30 @@ div .footer-container--banner{
   margin-bottom: 10px;
 }
 .card{
-  width: 70%;
-  padding: 14px 0;
+  width: 65%;
+  margin-bottom: 19px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 22px;
 }
 
 @media screen and (min-width: 736px) {
+  div .footer-container--banner{
+    margin-top: 44px;
+    box-shadow:  -4px -9px 18px var(--grisUdea);
+  }
   .footer-container--cards{
     justify-content: center;
     display: flex;
-    width: 100vp;
-    margin-top: 4px;
-    margin-bottom: 10px;
+    margin-top: 4px ;
+    margin-bottom: 140px;
   }
   .card{
     width: 80%;
-    padding: 14px 0;
+    margin: 0 -40px;
+  }
+  .card3{
+    transform: scale(1.14);
   }
 }

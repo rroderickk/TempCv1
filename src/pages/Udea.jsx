@@ -40,8 +40,8 @@ const Udea =()=> { return ( <>
 </div>
 <div style={{marginTop: "980px"}}>
   <img style={{maxWidth: "775px"}} src={ejemplo2} alt="prueba" />
-</div> */}
-
+</div>
+ */}
 
 
 
