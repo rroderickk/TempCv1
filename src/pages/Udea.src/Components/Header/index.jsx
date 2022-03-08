@@ -26,8 +26,8 @@ const Header =()=> { return ( <>
   <img className="Navbar-logo" src={navbarlogo} alt="Navbar-logo"/>
   <div className="Navbar-container">
     <ul className="Navbar-ul">
-      <li className="Navbar-li"><a href="#">Inicio</a></li>
-      <li className="Navbar-li"><a href="#">Programacion</a></li> 
+      <li className="Navbar-li"><a href="#inicio">Inicio</a></li>
+      <li className="Navbar-li"><a href="#programacion">Programacion</a></li> 
     </ul>
   </div>
   <div className="dropdown">

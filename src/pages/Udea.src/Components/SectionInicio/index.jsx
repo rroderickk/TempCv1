@@ -4,7 +4,7 @@ import inicio from "../../cabezote-inicio.png";
 
 const SectionInicio =()=> { return ( <>
 
-<section className="section-inicio">
+<section className="section-inicio" id="inicio">
   <div className="section-inicio--imgContainer">
   </div>
   <div className="section-inicio--videocontainer">
