@@ -3,6 +3,7 @@ import Header from "./Udea.src/Components/Header";
 import Layout from "@containers/Layout";
 import SectionInicio from "./Udea.src/Components/SectionInicio";
 import SectionProgramacion from "./Udea.src/Components/SectionProgramacion";
+import SectionProgramacionFooter from "./Udea.src/Components/SectionProgramacionFooter";
 
 /* Temporales */
 import prueba from "./Udea.src/prueba.png";
@@ -28,6 +29,7 @@ const Udea =()=> { return ( <>
 
     <SectionInicio/>
     <SectionProgramacion/> 
+    <SectionProgramacionFooter/> 
 
 {/* <div>
   <img style={{maxWidth: "375px"}} src={prueba} alt="prueba" />

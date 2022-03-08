@@ -4,7 +4,7 @@ import "./index.scss";
 const SectionProgramacion =()=> { return ( <>
 
 <section className="section-programacion-container" >
-  <div className="section-programacion-text" id="programacion"> 
+  <div className="section-programacion-text" > 
     <h1 className="section-programacion-title" >Comunidades educativas en <em>metamorphosis</em></h1>
   </div>
   <div className="section-programacion-textmiddle"> 
