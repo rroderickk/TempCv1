@@ -1,17 +1,66 @@
 .header-tsuite--nav{
-  background-color: var(--background);
+  background-color: #000000;
+  background-image: linear-gradient(025deg, #000000 28%, #414141 94%);
   justify-content: space-between;
+  outline: 1px solid orange;
+  box-shadow: 1px 1px 14px orange;
 }
+button{
+  background-image: url("../../Assets/menu.png");
+  margin-top: 0.8rem;
+}
+button:hover{
+  background-image: url("../../Assets/menu2.svg");
+  transition: 1s;
+}
+  
 
-@media screen and (min-width: 1024px){ 
+@media screen and (min-width: 1199px){ 
+  
   .header-tsuite--nav{
-    background-color: var(--background);
-    justify-content: space-between;
-    font-weight: 600;
+    background-image: none;
+    z-index: 99999;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    height: 7rem;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
   }
   li{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-right: 1px solid white;
     margin: 0 1.4rem;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+  }
+  a{
+    padding:  0 1rem;
+    padding-right: 2rem;
+  }
+  ul>:nth-child(6){
+    border-right: none;
+  }
+  button{
+    background-image: url("../../Assets/menu.png");
+  }
+}
+.dropdown-content { 
+  left: -200px; 
+  margin-top: 0.2rem;
+  background-color: var(--oscuroUdea);
+}
+
+.dropdown-content a {
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #000000;
+  background-image: linear-gradient(300deg, #000000 20%, #414141 74%, #000000 100%);
+}
+@media screen and (min-width: 736px){ 
+  button{
+    background-image: url("../../Assets/menu.png");
   }
 }
