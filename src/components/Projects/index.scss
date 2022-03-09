@@ -3,15 +3,17 @@
   flex-direction: column;
   height: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2.0rem;
   padding-bottom: 2rem;
   color: white;
   gap: 4rem;
-}footer span{
+  overflow: hidden;
+}
+footer span{
   display: inline-block;
-  width: 140px;
-  height: 140px;
+  width: 90px;
+  height: 90px;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -63,8 +65,8 @@
 
 .mcontenedor{
   overflow: hidden;
-  width: 130px;
-  height: 130px;
+  width: 90px;
+  height: 90px;
   max-width: 130px;
   max-height: 130px;
   background-color:dodgerblue;
@@ -88,8 +90,8 @@
   background-size: contain ;
 }.cprofessional{
   overflow: hidden;
-  width: 130px;
-  height: 130px;
+  width: 90px;
+  height: 90px;
   max-width: 130px;
   max-height: 130px;
   background-color: crimson;
@@ -106,8 +108,8 @@
   background-size: contain ;
 }.cudea{
   overflow: hidden;
-  width: 130px;
-  height: 130px;
+  width: 90px;
+  height: 90px;
   max-width: 130px;
   max-height: 130px;
   background-color: var(--udea);
@@ -127,8 +129,8 @@
   background-size: contain ;
 }.tsuite{
   overflow: hidden;
-  width: 130px;
-  height: 130px;
+  width: 90px;
+  height: 90px;
   max-width: 130px;
   max-height: 130px;
   background-color: var(--oscuroUdea);
