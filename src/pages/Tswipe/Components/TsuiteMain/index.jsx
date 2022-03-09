@@ -1,7 +1,7 @@
 import React from "react";
+import "./index.scss";
 
 const TsuiteMain =()=> { return ( <>
 
-  <div>TsuiteMain</div>
-
+  <div style={{background: "red"}}>TsuiteMain</div>
 </> ) }; export default TsuiteMain;

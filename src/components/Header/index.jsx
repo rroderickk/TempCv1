@@ -1,4 +1,4 @@
-import React from "react"; 
+import React, {useState} from "react"; 
 import "./Header.scss";
 import punk from "@logos/punk.png";
 import searchIcon from "@icons/searchIcon2.svg";
@@ -7,7 +7,10 @@ import switchlogo from "@icons/switch.svg";
 const haha =()=> alert("hell yeah proximamente....!");
 const handleRef =(param)=> window.scrollTo(0, param);
 
-const Header =({ comprarNft })=> { return ( <>
+const Header =({ comprarNft })=> { 
+const [searchValue, setSearchValue] = useState([]);
+
+return ( <>
 <div className="header">
   <div className="logoContainer">
     <img src={punk} className="punklogo" onClick={() => window.location.reload()} alt="PunkLogo"/>
