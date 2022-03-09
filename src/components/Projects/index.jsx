@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "./index.scss";
 
 const Projects =()=> { return ( <> 
@@ -26,6 +25,9 @@ const Projects =()=> { return ( <>
 </a>
 <Link className="a--container" to="/udea">
   <div className="cudea"><span className="a--udea" /></div>
+</Link>
+<Link className="a--container" to="/tsuite">
+  <div className="tsuite"><span className="a--tsuite" /></div>
 </Link>
 
 </footer>

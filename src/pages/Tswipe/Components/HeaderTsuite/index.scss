@@ -1,0 +1,17 @@
+.header-tsuite--nav{
+  background-color: var(--background);
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px){ 
+  .header-tsuite--nav{
+    background-color: var(--background);
+    justify-content: space-between;
+    font-weight: 600;
+  }
+  li{
+    font-size: 0.8rem;
+    border-right: 1px solid white;
+    margin: 0 1.4rem;
+  }
+}
