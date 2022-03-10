@@ -22,7 +22,7 @@ const style={
   backgroundSize: "cover",
 }
 
-const Udea =()=> { return ( <>
+const Udea =()=> { window.scrollTo(0,0); return ( <>
 
 <div style={style}>
   <Header/>
