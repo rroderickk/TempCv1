@@ -1,30 +1,43 @@
 
 .tsuite-main--container{
+  box-sizing: content-box;
   position: absolute;
   z-index: 1;
   color: white;
-  top: 6rem;
+  top: 3rem;
+  outline: 1px solid red;
+  width: 100%;
 }
 
 .tsuite--carrousel{
-  position: absolute;
+  position: relative;
   color: white;
   height: 100vh;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   background-color: #f39f86;
   background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  padding-top: 1rem;
 }
 .tsuite--carrousel .h1{
-  width: 100vp;
-  min-width: 400px;
+  min-width: 200px;
   max-width: 700px;
-  text-align: left;
-  font-size: 1.4rem;
+  text-align: center;
+  font-size: 1rem;
   font-weight: 400;
   // outline: 1px solid red;
-  margin-left: 1rem;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
 }
 .textRelativo {
   font-size: 63.3%;
+}
+
+@media screen and (min-width: 1199px){ 
+  .tsuite--carrousel .h1{
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 3rem;
+  }
 }
