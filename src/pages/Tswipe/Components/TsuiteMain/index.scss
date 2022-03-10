@@ -7,6 +7,7 @@
   top: 3rem;
   outline: 1px solid red;
   width: 100%;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
 
 .tsuite--carrousel{
@@ -32,6 +33,29 @@
 .textRelativo {
   font-size: 63.3%;
 }
+.learnmore--container{
+  border: 1px solid white;
+  width: 200px;
+  justify-content: center;
+  margin-left: calc(50% - 130px);
+  padding: 1.3rem 2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.learnmore--container:hover{
+  background-color: var(--oscuroUdea);
+  border: none;
+  transition: all 1s ease-in-out;
+}
+.b--learnmore{
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+}
 
 @media screen and (min-width: 1199px){ 
   .tsuite--carrousel .h1{
@@ -39,5 +63,22 @@
     text-align: left;
     margin-left: 1rem;
     margin-top: 3rem;
+  }
+  .learnmore--container{
+    border: 1px solid white;
+    width: 200px;
+    margin-left: calc(50% - 440px);
+    margin-top: -1rem;
+    padding: 1.3rem 2rem;
+    font-size: 0.71rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .learnmore--container:hover{
+    background-color: var(--oscuroUdea);
+    border: none;
+    transition: all 1s ease-in-out;
   }
 }
