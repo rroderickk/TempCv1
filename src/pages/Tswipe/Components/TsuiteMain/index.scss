@@ -1,0 +1,30 @@
+
+.tsuite-main--container{
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 6rem;
+}
+
+.tsuite--carrousel{
+  position: absolute;
+  color: white;
+  height: 100vh;
+  z-index: 1;
+  width: 100vw;
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+.tsuite--carrousel .h1{
+  width: 100vp;
+  min-width: 400px;
+  max-width: 700px;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 400;
+  // outline: 1px solid red;
+  margin-left: 1rem;
+}
+.textRelativo {
+  font-size: 63.3%;
+}

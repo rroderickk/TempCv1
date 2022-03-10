@@ -1,4 +1,6 @@
 .header-tsuite--nav{
+  position: fixed;
+  z-index: 9999;
   background-color: #000000;
   background-image: linear-gradient(025deg, #000000 28%, #414141 94%);
   justify-content: space-between;
@@ -10,7 +12,7 @@
 }
 .header-tsuite--logo{
   width: 10rem;
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 .header-tsuite--container{
   // display: none;
@@ -24,6 +26,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 90%;
 }
 .tsuite--li{
   // display: none;
@@ -76,6 +79,7 @@
   z-index: 1;
 }
 
+
 /* Links inside the dropdown */
 .--dropdown-content a {
   color: black;
@@ -97,11 +101,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 7rem;
-    background-color: transparent;
+    height: 6rem;
+    background-color: #000000;
     background-image: none;
     font-weight: bold;
     z-index: 99999;
+  }
+  .header-tsuite--logo{
+    padding-left: 0rem;
   }
   .--dropdown-content { left: -220px; }
   .tsuite--ul{
@@ -109,21 +116,23 @@
     flex-direction: row;
     flex-wrap: nowrap;
     list-style-type: none;
+    width: 100%;
   }
   .header-tsuite--container{
     display: flex;
   }
+  
   .tsuite--li{
     display: flex;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     border-right: 1px solid white;
     margin: 0 1.4rem;
     font-family: 'Roboto', 'Times New Roman', Times, serif;
   }
-  a{
-    padding:  0 1rem;
-    padding-right: 2rem;
+  ul li a{
+    margin-right: 2rem;
   }
+  
   .tsuite--ul>:nth-child(6){
     border-right: none;
   }
@@ -147,5 +156,10 @@
 }
 
 @media screen and (max-width: 736px){ 
+  .header-tsuite--nav{
+    position: fixed;
+    z-index: 9999;
+  }
+  
   .tsuite--ul{ display: none; }
 }
