@@ -48,12 +48,15 @@
   font-weight: 400;
   letter-spacing: 2.2px;
   cursor: pointer;
-  color: white;
   text-decoration: none;
   color: white;
-  text-decoration: none;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
+.b--learnmore:hover{
+    background-color: var(--background);
+    border: none;
+    transition: all 0.4s ease-in-out;
+  }
 .i--container{
   display: none;
 }
@@ -73,11 +76,6 @@
   }
   .b--learnmore{
     padding: 1.3rem 4rem;
-  }
-  .b--learnmore:hover{
-    background-color: var(--background);
-    border: none;
-    transition: all 0.4s ease-in-out;
   }
   .i--container{
     display: block;

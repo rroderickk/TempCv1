@@ -1,0 +1,14 @@
+.fancy-button--a{
+  // border: 1px solid white;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fancy-button--a:hover{
+  background-color: var(--background) !important;
+  transition: 0.4s all ease-in-out;
+  border: none !important;
+}
+
+.fancy-span{}
