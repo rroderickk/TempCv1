@@ -1,10 +1,11 @@
 import React from "react";
-import AwesomeSlider from "../AwesomeSlider";
+import Awesome from "../Awesome";
+
 import "./index.scss";
 
 const TsuiteMain =()=> { return ( <>
+<Awesome/>
 <main>
-
 <div className="tsuite-main--container textRelativo">
   <div className="tsuite-carrousel--container ">
     <div className="tsuite--carrousel">
@@ -15,7 +16,5 @@ const TsuiteMain =()=> { return ( <>
     </div>
   </div>
 </div>
-<AwesomeSlider/>
-
 </main>
 </> ) }; export default TsuiteMain;

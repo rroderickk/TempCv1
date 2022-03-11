@@ -4,20 +4,19 @@
   position: absolute;
   z-index: 1;
   color: white;
-  top: 3rem;
-  outline: 1px solid red;
+  top: 8rem;
   width: 100%;
+
   font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
 
 .tsuite--carrousel{
   position: relative;
   color: white;
-  height: 100vh;
   z-index: 1;
   width: 100%;
-  background-color: #f39f86;
-  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  // background-color: #f39f86;
+  // background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
   padding-top: 1rem;
 }
 .tsuite--carrousel .h1{
@@ -29,6 +28,7 @@
   // outline: 1px solid red;
   padding: 1rem 1rem;
   margin-top: 1rem;
+  text-shadow: 2px 2px 3px black;
 }
 .textRelativo {
   font-size: 63.3%;
@@ -82,3 +82,4 @@
     transition: all 1s ease-in-out;
   }
 }
+@media screen and (min-width: 1199px){}
