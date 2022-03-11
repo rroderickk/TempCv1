@@ -1,6 +1,6 @@
 /* Root keys */
 :root {
-	--white: #ffffff;
+	--white: #FFFFFF;
 	--black: #000000;
 	--very-light-pink: #c7c7c7;
 	--text-input-field: #f7f7f7;
@@ -9,9 +9,17 @@
 	--grisUdea: #dee2e6;
 	--oscuroUdea: #00000080;
 	--background: #181819;
+	--black1: #1b1b1b;
+	--customcrimson: #e51937;
+	--customgris: #4E4E4E;
 	--sm: 14px;
 	--md: 16px;
 	--lg: 18px;
+	--ex1: 2.4rem;
+	--ex2: 3rem;
+	--ex: 6.2rem;
+	--barlow: "Barlow Semi Condensed"
+	--source: "Source Sans Pro"
 }
 *{
 	scroll-behavior: smooth;

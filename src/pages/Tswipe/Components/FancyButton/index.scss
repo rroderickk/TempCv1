@@ -1,5 +1,4 @@
 .fancy-button--a{
-  // border: 1px solid white;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -10,5 +9,10 @@
   transition: 0.4s all ease-in-out;
   border: none !important;
 }
+
+.fancy-red:hover{background-color: crimson !important; }
+.fancy-salmon:hover{background-color: salmon !important; }
+.fancy-orange:hover{background-color: orange !important; }
+.fancy-crims:hover{background-color: var(--custoncrimson) !important; }
 
 .fancy-span{}
