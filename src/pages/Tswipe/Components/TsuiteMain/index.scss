@@ -5,8 +5,8 @@
   color: white;
   top: 11rem;
   width: 100%;
-
-  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  font-family: "Roboto", "Source Sans Pro", sans-serif, Arial, Helvetica;
+  // text-transform: uppercase;
 }
 
 .tsuite--carrousel{
@@ -22,38 +22,38 @@
   min-width: 200px;
   max-width: 700px;
   text-align: center;
+  justify-content: center;
   font-size: 1rem;
   font-weight: 400;
-  // outline: 1px solid red;
   padding: 1rem 1rem;
   margin-top: 1rem;
+  margin: 0 auto;
   text-shadow: 2px 2px 3px black;
 }
 .textRelativo {
   font-size: 63.3%;
 }
 .learnmore--container{
-  border: 1px solid white;
-  width: 200px;
   justify-content: center;
-  margin-left: calc(50% - 130px);
+  margin: 0 auto;
+  margin-top: 2.2rem;
+  min-width: 200px;
+}
+.b--learnmore{
+  border: 1px solid #ffffffff;
   padding: 1.3rem 2rem;
   font-size: 0.7rem;
   font-weight: 400;
-  letter-spacing: 1.2px;
+  letter-spacing: 2.2px;
   cursor: pointer;
   color: white;
   text-decoration: none;
-}
-.learnmore--container:hover{
-  background-color: var(--oscuroUdea);
-  border: none;
-  transition: all 1s ease-in-out;
-}
-.b--learnmore{
   color: white;
   text-decoration: none;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
+}
+.i--container{
+  display: none;
 }
 
 @media screen and (min-width: 1199px){ 
@@ -69,23 +69,36 @@
     width: auto;
     text-justify: auto;
   }
-  .learnmore--container{
-    border: 1px solid white;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;
-    padding: 1.3rem 2rem;
-    font-size: 0.71rem;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    cursor: pointer;
-    text-decoration: none;
+  .b--learnmore{
+    padding: 1.3rem 4rem;
   }
-  .learnmore--container:hover{
-    background-color: var(--oscuroUdea);
+  .b--learnmore:hover{
+    background-color: var(--background);
     border: none;
-    transition: all 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
+  .i--container{
+    display: block;
+    position: relative;
+    top: 130px;
+    transform: rotate(90deg);
+  }
+  .i--flechita:hover{
+    background-color: crimson;
+    border: transparent;
+    animation-name: example;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  .i--flechita{
+    position: relative;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    overflow: hidden;
+    box-sizing: content-box;
+  }
+  
 }
 @media screen and (min-width: 1199px){}
