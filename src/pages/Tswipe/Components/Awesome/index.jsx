@@ -16,24 +16,22 @@ const fadeImages = [
 ];
 
 const Awesome =()=> { return (  <>
-<div className="awesome-img--container">
-  <div className="img--container" >
-    <AutoplaySlider
-      fillParent={true}
-      play={true}
-      infinite={true}
-      transitionDelay={100}
-      delay={100}
-      organicArrows={false}
-      buttons={false}
-      bullets={false}
-      cssModule={AwesomeSliderStyles}
-    >
-      <div data-src={fadeImages[0]} />
-      <div data-src={fadeImages[1]} />
-      <div data-src={fadeImages[2]} />
-      <div data-src={fadeImages[3]} />
-    </AutoplaySlider>
-  </div>
+<div className="img--container" >
+  <AutoplaySlider
+    fillParent={true}
+    play={true}
+    infinite={true}
+    transitionDelay={100}
+    delay={100}
+    organicArrows={false}
+    buttons={false}
+    bullets={false}
+    cssModule={AwesomeSliderStyles}
+  >
+    <div data-src={fadeImages[0]} />
+    <div data-src={fadeImages[1]} />
+    <div data-src={fadeImages[2]} />
+    <div data-src={fadeImages[3]} />
+  </AutoplaySlider>
 </div>
 </> ) }; export default Awesome;
