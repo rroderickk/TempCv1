@@ -20,7 +20,7 @@ const TsuiteMain =()=> { return ( <>
       </div>
     </div>
   </div>
-<div className="i--container" onClick={handleScroll(1000)} rel="noreferrer noopener"><i className="i--flechita">►</i></div>
+<div className="i--container" onClick={handleScroll(710)} rel="noreferrer noopener"><i className="i--flechita">►</i></div>
 </div>
 </main>
 </> ) }; export default TsuiteMain;
