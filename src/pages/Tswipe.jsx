@@ -10,6 +10,10 @@ const Tswipe =()=> { window.scrollTo(0,0); return ( <>
 <HeaderTsuite/>
 <TsuiteMain/>
 <TsuiteBody/>
+<TsuiteBody/>
+<TsuiteBody/>
+<TsuiteBody/>
+<TsuiteBody/>
 
 </> ) }; export default Tswipe;
 
