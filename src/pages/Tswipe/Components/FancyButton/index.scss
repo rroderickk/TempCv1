@@ -2,12 +2,14 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .fancy-button--a:hover{
   background-color: var(--background) !important;
   transition: 0.4s all ease-in-out;
   border: none !important;
+  color: white !important;
 }
 
 .fancy-red:hover{background-color: crimson !important; }

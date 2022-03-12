@@ -1,8 +1,12 @@
 .banner-container{
   position: relative;
-  top: 1rem;
-  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  top: 0rem;
   width: 100%;
+  min-height: 280px;
+  overflow: hidden;
   color: red;
   padding: 2rem 0rem;
   line-height: 1px;
@@ -57,14 +61,26 @@
     position: relative;
     top: -2rem;
     width: 100%;
-    margin-bottom: 2rem;
   }
+}
+.button-banner--container{
+  display: block;
+  justify-content: center;
+  margin: -1rem auto;
 }
 @media screen and (min-width: 1110px){
   .banner-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 420px;
+    width: 400px;
     sup{top: 1rem;}
-    h2{ top: 0rem; }
-    p{ top: -1rem; }
-    img{ top: -6rem;}
+    h2 {top: 0rem;}
+    p  {top: -1rem;}
+    img{top: -4rem;}
+  }
+  .button-banner--container{
+    margin-top: -4rem;
   }
 }
