@@ -14,7 +14,7 @@ const button ={
   letterSpacing:  `${!props.spa? "2.2px":props.spa}`,
   border:        `1px solid ${!props.bor? "white":props.bor}`,
   color:        `${!props.color? "white":props.color}`,
-  fancy: `${!props.fancy? "grey":props.fancy}`,
+  fancy:      `${!props.fancy? "grey":props.fancy}`,
 };
 
 return (  <>
