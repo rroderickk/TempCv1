@@ -10,7 +10,7 @@ import comparador from "../Banner/comparador.png";
 import pronosticos from "../Banner/pronos.png";
 import data from "../Banner/data.png";
 
-const TsuiteBody =()=> { return ( <>
+const TsuiteBody =({children})=> { return ( <>
 
 <div className="tsuite-body--container">
   <div className="tsuite-banner--wrapper">
@@ -34,5 +34,5 @@ const TsuiteBody =()=> { return ( <>
     </Banner>
   </div>
 </div>
-
+{children}
 </> ) }; export default TsuiteBody;
