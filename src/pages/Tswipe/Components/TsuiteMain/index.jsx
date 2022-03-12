@@ -16,6 +16,7 @@ const TsuiteMain =()=> { return ( <>
     <div className="tsuite--carrousel">
       <h1 className="h1 textRelativo">Con nuestros algoritmos de inteligencia artificial maximizas el rendimiento de tus reservas en viviendas vacacionales, apartamentos turisticos y establecimientos hoteleros.</h1>
       <div className="learnmore--container">
+        <span className="fancy"></span>
         <a onClick={()=>newwindow()} className="b--learnmore">APRENDE MAS +</a>
       </div>
     </div>
@@ -23,4 +24,4 @@ const TsuiteMain =()=> { return ( <>
 <div className="i--container" onClick={handleScroll(710)} rel="noreferrer noopener"><i className="i--flechita">►</i></div>
 </div>
 </main>
-</> ) }; export default TsuiteMain;
+</> ) }; export default TsuiteMain; newwindow;

@@ -14,11 +14,12 @@ const button ={
   letterSpacing:  `${!props.spa? "2.2px":props.spa}`,
   border:        `1px solid ${!props.bor? "white":props.bor}`,
   color:        `${!props.color? "white":props.color}`,
+  fancy: `${!props.fancy? "grey":props.fancy}`,
 };
 
 return (  <>
 <div style={container} className="fancy-button--container">
-  <span className="fancy-span"></span>
+  <span style={{backgroundColor: `${button.fancy}`}} className="fancy-span"></span>
   <a style={button} className=
   {
     `fancy-button--a ${props.c1 && "fancy-red"} || ${props.c2 && "fancy-salmon"}

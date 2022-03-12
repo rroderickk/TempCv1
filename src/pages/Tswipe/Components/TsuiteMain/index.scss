@@ -37,7 +37,9 @@
 }
 .learnmore--container{
   justify-content: center;
-  margin: 0 auto;
+  justify-items: center;
+  // margin: 0 auto;
+  margin-left: -65px;
   margin-top: 2.2rem;
   min-width: 200px;
 }
@@ -53,12 +55,20 @@
   font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
 .b--learnmore:hover{
-    background-color: var(--background);
-    border: none;
-    transition: all 0.4s ease-in-out;
-  }
+  background-color: var(--background);
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
 .i--container{
   display: none;
+}
+.fancy{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 60px;
+  height: 1px;
+  transform: translateX(20px) translateY(-2px);;
+  background-color: white;
 }
 
 @media screen and (min-width: 1199px){ 
@@ -81,7 +91,7 @@
     display: block;
     position: relative;
     top: 130px;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(120px);
   }
   .i--flechita:hover{
     background-color: crimson;

@@ -3,6 +3,7 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
+  margin-left: -60px;
 }
 
 .fancy-button--a:hover{
@@ -17,4 +18,13 @@
 .fancy-orange:hover{background-color: orange !important; }
 .fancy-crims:hover{background-color: var(--custoncrimson) !important; }
 
-.fancy-span{}
+.fancy-span{
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  position: relative;
+  left: 22px;
+  top: 20px;
+  // background-color: grey;
+  transform: translate(-60px);
+}
