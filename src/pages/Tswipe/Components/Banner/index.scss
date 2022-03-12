@@ -22,7 +22,7 @@
     content: "";
     position: relative;
     display: inline-block;
-    width: 3.3rem;
+    width: 60px;
     margin-left: 1rem;
     height: 0.3rem;
     vertical-align:super;
@@ -30,16 +30,16 @@
   }
   h2{
     position: relative;
-    top: -1.3rem;
+    top: -1rem;
     text-transform: uppercase;
     letter-spacing: -1.55px;
     font-family: var(--barlow);
-    font-size: var(--ex2);
+    font-size: var(--ex1);
     color: var(--black1);
   }
   p{    
     position: relative;
-    top: -2.1rem;
+    top: -50px;
     text-transform: uppercase;
     letter-spacing: -1.55px;
     font-weight: lighter;
@@ -51,8 +51,9 @@
     content: "";
     position: relative;
     display: inline-block;
-    width: 8.6rem;
-    margin-right: 0.4rem;
+    width: 90px;
+    left: -1rem;
+    margin-right: 0.1rem;
     height: 0.4rem;
     vertical-align: super;
     background-color: var(--customgris2);
@@ -61,12 +62,13 @@
     position: relative;
     top: -2rem;
     width: 100%;
+    min-height: 290px;
   }
 }
 .button-banner--container{
   display: block;
   justify-content: center;
-  margin: -1rem auto;
+  margin: 0rem auto;
 }
 @media screen and (min-width: 1110px){
   .banner-container{
@@ -75,12 +77,13 @@
     flex-wrap: nowrap;
     height: 420px;
     width: 400px;
-    sup{top: 1rem;}
-    h2 {top: 0rem;}
-    p  {top: -1rem;}
-    img{top: -4rem;}
+    // sup{top: 1rem;}
+    // h2 {top: 0rem;}
+    // p  {top: -1rem;}
+    // img{top: -4rem;}
   }
   .button-banner--container{
-    margin-top: -4rem;
+    position: relative;
+    top: -24px;
   }
 }
