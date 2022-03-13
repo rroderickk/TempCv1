@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import {Link} from "react-router-dom";
 
 const container ={ display: "flex", position: "relative", zIndex: "0", };
 
@@ -20,11 +21,25 @@ const button ={
 return (  <>
 <div style={container} className="fancy-button--container">
   <span style={{backgroundColor: `${button.fancy}`}} className="fancy-span"></span>
-  <a style={button} className=
   {
-    `fancy-button--a ${props.c1 && "fancy-red"} || ${props.c2 && "fancy-salmon"}
-    || ${props.c3 && "fancy-orange"} || ${props.c4 && "fancy-crims"}`
-  } 
-    href={props.to} rel="noreferrer noopener" target="_blank">{props.text}</a>
+  props.link?
+    <Link style={button} className=
+      {
+        `fancy-button--a ${props.c1 && "fancy-red"} || ${props.c2 && "fancy-salmon"}
+        || ${props.c3 && "fancy-orange"} || ${props.c4 && "fancy-crims"}`
+      } 
+        to={''+props.link+''}
+    >
+      {props.text}
+    </Link>
+  :
+    <a style={button} className=
+      {
+        `fancy-button--a ${props.c1 && "fancy-red"} || ${props.c2 && "fancy-salmon"}
+        || ${props.c3 && "fancy-orange"} || ${props.c4 && "fancy-crims"}`
+      } 
+        href={props.to} rel="noreferrer noopener" target="_blank">{props.text}
+    </a>
+  }
 </div>
 </> ) }; export default FancyButton;

@@ -10,12 +10,15 @@ import comparador from "../Banner/comparador.png";
 import pronosticos from "../Banner/pronos.png";
 import data from "../Banner/data.png";
 
+// import TsuiteAbout from "@pages/Tswipe/Components/TsuiteAbout";
 const TsuiteBody =({children})=> { return ( <>
 
 <div className="tsuite-body--container">
   <div className="tsuite-banner--wrapper">
     <Banner num="01" text="Analizador" info="de reservas" img={res} textinfo="insert text info here">
-      <FancyButton text="Ver analizador" to="" spa="5px" color="black" bg="" bor="black" fancy="crimson" />
+      <FancyButton text="Ver analizador" spa="5px" color="black" bg="" bor="black" fancy="crimson" 
+        to="" link="/tsuite/about" 
+      />
     </Banner>
     <Banner num="02" text="Estudio" info="de mercado">
       <FancyButton text="estudio" to="" spa="19px" color="black" bg="" bor="orange"/>

@@ -7,6 +7,7 @@ import Home from "@pages/Home";
 import NotFound from "@pages/NotFound";
 import Udea from "@pages/Udea";
 import Tswipe from "@pages/Tswipe";
+import TsuiteAbout from "@pages/Tswipe/Components/TsuiteAbout";
 
 const App = () => {
 const initialState = useInitialState();
@@ -21,6 +22,7 @@ return (
         <Route exact path="/" element={<Home />} />
         <Route exact path="/udea" element={<Udea />} />
         <Route exact path="/tsuite" element={<Tswipe />} />
+        <Route exact path="/tsuite/about" element={<TsuiteAbout/>} />
 
         {/* //todo ¡¡ InsertRoutes here !! */}
 
