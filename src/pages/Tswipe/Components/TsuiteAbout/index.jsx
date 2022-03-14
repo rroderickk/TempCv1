@@ -22,13 +22,14 @@ return (  <>
 
 <main className="tsuite-about--container">
   <BannerHeader/>
-  <NaviLinks a="about" rutaA="/tsuite/about" b="Analizador de reservas" rutaB="/tsuite/about" c="" rutaC=""/>
+  {props.children  ||
+  <NaviLinks a="about" rutaA="/tsuite/about" b="Analizador de reservas" rutaB="/tsuite" c="" rutaC=""/>}
 
 <div className="tsuite-aboutmain--container">
   {
     <div className="tsuite-aboutmain--imgcontainer"> 
       <img className="aboutmain--img" alt="img-about" 
-        src={props.children || prueba} style={imgstyle}/>
+        src={props.children2 || prueba} style={imgstyle}/>
     </div>
   }
 

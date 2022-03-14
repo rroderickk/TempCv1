@@ -26,23 +26,23 @@ const HeaderTsuite =()=> { return ( <>
   <div className="header-tsuite--logo" alt="Navbar-logo"><Link to="/tsuite" className="header-tsuite--span"></Link></div>
 <div className="header-tsuite--container">
   <ul className="tsuite--ul">
-    <li className="tsuite--li"><Link to="/tsuite/about">ACELERADOR DE RESERVAS</Link></li>
-    <li className="tsuite--li"><Link to="#artificial">INTELIGENCIA ARTIFICIAL</Link></li>
-    <li className="tsuite--li"><Link to="#producto">PRODUCTO</Link></li> 
-    <li className="tsuite--li"><Link to="#precios">PRECIOS</Link></li> 
-    <li className="tsuite--li"><Link to="#nosotros">NOSOTROS</Link></li> 
-    <li className="tsuite--li"><Link to="#blog">BLOG</Link></li> 
+    <li className="tsuite--li"><Link to="/tsuite/about/analizador">ACELERADOR DE RESERVAS</Link></li>
+    <li className="tsuite--li"><Link to="/tsuite/about/estudio">INTELIGENCIA ARTIFICIAL</Link></li>
+    <li className="tsuite--li"><Link to="/tsuite/about/pronosticosypromociones">PRODUCTO</Link></li> 
+    <li className="tsuite--li"><Link to="/tsuite/about/preciosdinamicos">PRECIOS</Link></li> 
+    <li className="tsuite--li"><Link to="/tsuite/about/contacto">NOSOTROS</Link></li> 
+    <li className="tsuite--li"><Link to="/tsuite/about/comparadordecanales">BLOG</Link></li> 
   </ul>
 </div>
   <div className="--dropdown">
     <button onClick={()=>myFunction()} className="--dropbtn btnmenu"> </button>
       <div id="myDropdown" className="--dropdown-content">
-      <Link to="#accelerador">ACELERADOR DE RESERVAS</Link>
-      <Link to="#artificial">INTELIGENCIA ARTIFICIAL</Link>
-      <Link to="#producto">PRODUCTO</Link> 
-      <Link to="#precios">PRECIOS</Link> 
-      <Link to="#nosotros">NOSOTROS</Link> 
-      <Link to="#blog">BLOG</Link> 
+      <Link to="/tsuite/about/analizador">ACELERADOR DE RESERVAS</Link>
+      <Link to="/tsuite/about/contacto">INTELIGENCIA ARTIFICIAL</Link>
+      <Link to="/tsuite/about/pronosticosypromociones">PRODUCTO</Link> 
+      <Link to="/tsuite/about/preciosdinamicos">PRECIOS</Link> 
+      <Link to="/tsuite/about/contacto">NOSOTROS</Link> 
+      <Link to="/tsuite/about/contacto">BLOG</Link> 
     </div>
   </div>
 </nav>
