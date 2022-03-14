@@ -1,5 +1,5 @@
 import React from "react";
-import navbarlogo from "@assets/assetsTsuite/tsuite.svg";
+import {Link} from "react-router-dom";
 import "./index.scss";
 
 function myFunction() {
@@ -23,10 +23,10 @@ window.onclick = function(event) {
 const HeaderTsuite =()=> { return ( <>
 <header>
 <nav className="header-tsuite--nav">
-  <img className="header-tsuite--logo" src={navbarlogo} alt="Navbar-logo"/>
+  <div className="header-tsuite--logo" alt="Navbar-logo"><Link to="/tsuite" className="header-tsuite--span"></Link></div>
 <div className="header-tsuite--container">
   <ul className="tsuite--ul">
-    <li className="tsuite--li"><a href="#accelerador">ACELERADOR DE RESERVAS</a></li>
+    <li className="tsuite--li"><a href="/TempCv1/tsuite/about">ACELERADOR DE RESERVAS</a></li>
     <li className="tsuite--li"><a href="#artificial">INTELIGENCIA ARTIFICIAL</a></li>
     <li className="tsuite--li"><a href="#producto">PRODUCTO</a></li> 
     <li className="tsuite--li"><a href="#precios">PRECIOS</a></li> 

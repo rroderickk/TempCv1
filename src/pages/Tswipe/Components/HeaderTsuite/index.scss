@@ -14,8 +14,26 @@
 }
 .header-tsuite--logo{
   width: 10rem;
-  padding-left: 1rem;
+  margin-left: 6px;
+  background-image: url("@assets/assetsTsuite/tsuite.svg");
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: 0px 30px;
 }
+.header-tsuite--span{
+  position: relative;
+  top: 44px;
+  padding: 10px 98px;
+  color: transparent;
+  width: 100px;
+} 
+.header-tsuite--logo:hover{
+  filter: saturate(1030%);
+  filter:  blur(0.59px) contrast(195%) brightness(10003%);
+}
+
 .header-tsuite--container{
   // display: none;
   flex-direction: row;
@@ -114,6 +132,23 @@
   }
   .header-tsuite--logo{
     padding-left: 0rem;
+    display: inline-block;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    background-image: url("@assets/assetsTsuite/tsuite.svg");
+  }
+  .header-tsuite--span{
+    position: relative;
+    top: 20px;
+    padding: 10px 98px;
+    color: transparent;
+    width: 100px;
+  } 
+  .header-tsuite--logo:hover{
+    filter: saturate(1030%);
+  filter:  blur(0.59px) contrast(195%) brightness(10003%);
+
   }
   .--dropdown-content { left: -220px; }
   .tsuite--ul{

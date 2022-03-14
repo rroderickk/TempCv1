@@ -28,12 +28,12 @@ return (  <>
   {
     <div className="tsuite-aboutmain--imgcontainer"> 
       <img className="aboutmain--img" alt="img-about" 
-        src={props.children ?? prueba} style={imgstyle}/>
+        src={props.children || prueba} style={imgstyle}/>
     </div>
   }
 
   <div className="aboutmain-title--container">
-    {props.title ?? 
+    {props.title || 
     <TitleRight sup="01" title="Analizador" sub="de reservas"/>}
   </div>
 

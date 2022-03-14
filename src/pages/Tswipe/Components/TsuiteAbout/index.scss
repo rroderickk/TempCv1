@@ -39,6 +39,8 @@
   margin: 36px auto;
   overflow: hidden;
 }
+
+.aboutmain-title--container::before{ display: none;}
 .tsuite-aboutmain--container .p1{
   color: grey;
   font-size: 18px;
@@ -79,16 +81,16 @@
   }
   .tsuite-aboutmain--imgcontainer >img{ width: 100%; }
   .aboutmain-title--container{
-    margin: 0;
-    padding: 0;
-    width: 50%;
-    min-height: 234px;
-    max-height: 234px;
     display: block;
     position: relative;
+    // outline: 1px solid red;
+    width: 100%;
+    max-height: 234px;
+    margin: 0;
+    padding: 0;
     top: -540px;
-    padding-left: 32rem;
   }
+  .aboutmain-title--container::before{ display: none; }
   .tsuite-aboutmain--container .p1{
     display: flex;
     position: relative;
@@ -96,4 +98,15 @@
     padding-left: 30rem;
   }
   .tsuite-aboutmain--container .p2{ top: -560px; }
+}
+@media screen and (min-width: 1199px){
+  .aboutmain-title--container::before{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    transform: translate(380px, 92px);
+    background-color: red;
+    width: 440px;
+    height: 4px;
+  }
 }
