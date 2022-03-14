@@ -10,7 +10,7 @@
   z-index: 1;
 }
 .tsuite-banner--img{
-  background: var(--oscuroUdea) url("../../Assets/tsuite.svg") no-repeat;
+  background: var(--oscuroUdea) url("@assets/assetsTsuite/tsuite.svg") no-repeat;
   filter: opacity(50%);
   background-position: center center;
   background-size: 80%;
@@ -21,7 +21,7 @@
   width: 100%;
 }
 .tsuite-banner--span{
-  background: transparent url("../../Assets/tsuite.svg") no-repeat;
+  background: transparent url("@assets/assetsTsuite/tsuite.svg") no-repeat;
   filter: opacity(20%);
   background-position: left;
   background-size: 880%;

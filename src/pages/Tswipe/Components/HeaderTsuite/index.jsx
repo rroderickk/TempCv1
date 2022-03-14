@@ -1,5 +1,5 @@
 import React from "react";
-import navbarlogo from "../../Assets/tsuite.svg";
+import navbarlogo from "@assets/assetsTsuite/tsuite.svg";
 import "./index.scss";
 
 function myFunction() {

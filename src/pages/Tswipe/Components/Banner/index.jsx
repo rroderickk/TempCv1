@@ -8,7 +8,11 @@ const Banner =(props)=> { return ( <>
   <sup>{props.num }</sup>
   <h2> {props.text}</h2>
   <p>  {props.info}</p>
-  <img src={props.img? props.img:img1}/>
+
+  <img 
+    src={ props.img? props.img : (props.img===null? null:img1) }
+  />
+
   <div className="button-banner--container">
         {props.children}
     {/* <h5>{props.textinfo}</h5> */}
