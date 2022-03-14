@@ -1,6 +1,7 @@
 import React from "react";
-import Awesome from "../Awesome";
+import {Awesome} from "../Awesome";
 import "./index.scss";
+
 const handleScroll =(param)=>()=> window.scrollTo(0, param);
 
 function newwindow(){  
@@ -24,4 +25,4 @@ const TsuiteMain =()=> { return ( <>
 <div className="i--container" onClick={handleScroll(710)} rel="noreferrer noopener"><i className="i--flechita">►</i></div>
 </div>
 </main>
-</> ) }; export default TsuiteMain; newwindow;
+</> ) }; export { TsuiteMain, newwindow};

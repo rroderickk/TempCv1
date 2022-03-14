@@ -46,4 +46,4 @@ const Udea =()=> { window.scrollTo(0,0); return ( <>
 
 
 </div>
-</> ) }; export default Udea;
+</> ) }; export { Udea};

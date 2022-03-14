@@ -40,4 +40,4 @@ return ( <>
 
 <Projects/>
 
-</> ) }; export default Home;
+</> ) }; export { Home};

@@ -10,4 +10,4 @@ const BannerHeader =()=> { return ( <>
 </div> 
     <div className="tsuite--prop">property managers</div>
 
-</>) }; export default BannerHeader;
+</>) }; export { BannerHeader};

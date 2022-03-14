@@ -1,9 +1,9 @@
 import React from "react";
-import HeaderTsuite from "./Tswipe/Components/HeaderTsuite";
-import TsuiteMain from "./Tswipe/Components/TsuiteMain";
-import TsuiteBody from "./Tswipe/Components/TsuiteBody";
+import {HeaderTsuite} from "./Tswipe/Components/HeaderTsuite";
+import {TsuiteMain} from "./Tswipe/Components/TsuiteMain";
+import {TsuiteBody} from "./Tswipe/Components/TsuiteBody";
+import {TsuiteAbout} from "./Tswipe/Components/TsuiteAbout";
 import "./resetStyles.scss";
-import TsuiteAbout from "./Tswipe/Components/TsuiteAbout";
 
 const Tswipe =()=> { window.scrollTo(0,0); return ( <>
 
@@ -12,7 +12,7 @@ const Tswipe =()=> { window.scrollTo(0,0); return ( <>
 <TsuiteBody/>
 <TsuiteMain/>
 
-</> ) }; export default Tswipe;
+</> ) }; export { Tswipe};
 
 
 

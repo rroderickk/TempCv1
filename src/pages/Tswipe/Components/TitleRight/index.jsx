@@ -9,4 +9,4 @@ const TitleRight =(props)=> { return ( <>
   <h3> {props.sub}</h3>
 </div>
 
-</> ) }; export default TitleRight;
+</> ) }; export { TitleRight};

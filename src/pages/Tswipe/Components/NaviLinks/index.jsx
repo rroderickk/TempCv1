@@ -12,4 +12,4 @@ const NaviLinks =(props)=> { return ( <>
 {props.c=="" ? null : <Link to={''+props.rutaC+''}>{props.c} <span>»</span> </Link>}
 </div>
 
-</>  ) }; export default NaviLinks;
+</>  ) }; export { NaviLinks};

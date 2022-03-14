@@ -49,4 +49,4 @@ const HeaderTsuite =()=> { return ( <>
 </header>
 
 <div>alkdhf</div>
-</> ) }; export default HeaderTsuite;
+</> ) }; export { HeaderTsuite};

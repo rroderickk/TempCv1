@@ -34,4 +34,4 @@ const Awesome =()=> { return (  <>
     <div data-src={fadeImages[3]} />
   </AutoplaySlider>
 </div>
-</> ) }; export default Awesome;
+</> ) };  export {Awesome};

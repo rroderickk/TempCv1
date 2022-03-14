@@ -14,4 +14,4 @@ const [state, setState] = useState(initialState);
 
 return {
   state,
-};  }; export default useInitialState;
+};  }; export {useInitialState};

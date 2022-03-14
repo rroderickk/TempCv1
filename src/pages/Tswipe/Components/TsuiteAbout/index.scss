@@ -32,7 +32,7 @@
 }
 .tsuite-aboutmain--imgcontainer >img{ position: relative; }
 .aboutmain-title--container{
-  width: 310px;
+  width: 330px;
   min-width: 310px;
   min-height: 174px;
   max-height: 174px;
@@ -46,7 +46,7 @@
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, Georgia, Sans-serif;
   text-align: left;
   padding: 0 36px;
   margin-left: 4px;
@@ -55,19 +55,20 @@
 .tsuite-aboutmain--container .p2{
   color: grey;
   font-size: 18px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.2px;
   line-height: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, Georgia, Sans-serif;
   text-align: left;
   padding: 0 36px;
   margin-left: 4px;
-  display: flex;
+  display: block;
   position: relative;
   height: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1110px){
+  .tsuite-about--container{height: 100%;}
   .tsuite-aboutmain--container{ margin: 0 8rem; }
   .tsuite-aboutmain--imgcontainer{
     display: flex;
@@ -83,7 +84,6 @@
   .aboutmain-title--container{
     display: block;
     position: relative;
-    // outline: 1px solid red;
     width: 100%;
     max-height: 234px;
     margin: 0;
@@ -100,6 +100,7 @@
   .tsuite-aboutmain--container .p2{ top: -560px; }
 }
 @media screen and (min-width: 1199px){
+  .tsuite-about--container{height: 100%;}
   .aboutmain-title--container::before{
     content: " ";
     display: inline-block;

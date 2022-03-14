@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../Banner"
-import FancyButton from "../FancyButton";
+import {FancyButton} from "../FancyButton";
 import "./index.scss";
 
 /* imgs */
@@ -48,4 +48,4 @@ const TsuiteBody =({children})=> { return ( <>
   </div>
 </div>
 {children}
-</> ) }; export default TsuiteBody;
+</> ) }; export { TsuiteBody};

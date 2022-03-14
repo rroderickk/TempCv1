@@ -34,4 +34,4 @@ return (  <>
     </Link>
   : undefined}
 </div>
-</> ) }; export default FancyButton;
+</> ) }; export { FancyButton};
