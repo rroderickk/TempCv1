@@ -32,14 +32,6 @@ return (  <>
     >
       {props.text}
     </Link>
-  :
-    <a style={button} className=
-      {
-        `fancy-button--a ${props.c1 && "fancy-red"} || ${props.c2 && "fancy-salmon"}
-        || ${props.c3 && "fancy-orange"} || ${props.c4 && "fancy-crims"}`
-      } 
-        href={props.to} rel="noreferrer noopener" target="_blank">{props.text}
-    </a>
-  }
+  : undefined}
 </div>
 </> ) }; export default FancyButton;

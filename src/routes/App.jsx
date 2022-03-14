@@ -22,13 +22,30 @@ return (
       <Route exact path="/" element={<Home />} />
       <Route exact path="/udea" element={<Udea />} />
       <Route exact path="/tsuite" element={<Tswipe />} />
-      <Route exact path="/tsuite/about" 
-        element={<TsuiteAbout 
-          title={
-          <TitleRight sup="about" title="analizador" sub="de reservas"/>}
-        />} 
-      />
-      {/* //todo ¡¡ InsertRoutes here !! */}
+
+<Route exact path="/tsuite/about/analizador" 
+  element={<TsuiteAbout title={ <TitleRight sup="about" title="analizador" sub="de reservas"/>} />} 
+/>
+
+<Route exact path="/tsuite/about/estudio" 
+  element={<TsuiteAbout title={ <TitleRight sup="about" title="estudio" sub="de mercado"/>} />} 
+/>
+
+<Route exact path="/tsuite/about/preciosdinamicos" 
+  element={<TsuiteAbout title={ <TitleRight sup="about" title="precios" sub="dinamicos"/>} />} 
+/>
+
+<Route exact path="/tsuite/about/comparadordecanales" 
+  element={<TsuiteAbout title={ <TitleRight sup="about" title="comparador" sub="de canales"/>} />} 
+/>
+
+<Route exact path="/tsuite/about/pronosticosypromociones" 
+  element={<TsuiteAbout title={ <TitleRight sup="about" title="pronosticos" sub="y promociones"/>} />} 
+/>
+
+<Route exact path="/tsuite/about/contacto" 
+  element={<TsuiteAbout title={ <TitleRight sup="about" title="informacion" sub="de contacto"/>} />} 
+/>
 
       <Route exact path="*" element={<NotFound/>} />
     </Routes>
