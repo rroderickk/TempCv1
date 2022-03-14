@@ -37,12 +37,12 @@ const HeaderTsuite =()=> { return ( <>
   <div className="--dropdown">
     <button onClick={()=>myFunction()} className="--dropbtn btnmenu"> </button>
       <div id="myDropdown" className="--dropdown-content">
-      <a href="#accelerador">ACELERADOR DE RESERVAS</a>
-      <a href="#artificial">INTELIGENCIA ARTIFICIAL</a>
-      <a href="#producto">PRODUCTO</a> 
-      <a href="#precios">PRECIOS</a> 
-      <a href="#nosotros">NOSOTROS</a> 
-      <a href="#blog">BLOG</a> 
+      <Link to="#accelerador">ACELERADOR DE RESERVAS</Link>
+      <Link to="#artificial">INTELIGENCIA ARTIFICIAL</Link>
+      <Link to="#producto">PRODUCTO</Link> 
+      <Link to="#precios">PRECIOS</Link> 
+      <Link to="#nosotros">NOSOTROS</Link> 
+      <Link to="#blog">BLOG</Link> 
     </div>
   </div>
 </nav>
