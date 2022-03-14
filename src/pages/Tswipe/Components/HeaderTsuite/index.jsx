@@ -26,12 +26,12 @@ const HeaderTsuite =()=> { return ( <>
   <div className="header-tsuite--logo" alt="Navbar-logo"><Link to="/tsuite" className="header-tsuite--span"></Link></div>
 <div className="header-tsuite--container">
   <ul className="tsuite--ul">
-    <li className="tsuite--li"><a href="/TempCv1/tsuite/about">ACELERADOR DE RESERVAS</a></li>
-    <li className="tsuite--li"><a href="#artificial">INTELIGENCIA ARTIFICIAL</a></li>
-    <li className="tsuite--li"><a href="#producto">PRODUCTO</a></li> 
-    <li className="tsuite--li"><a href="#precios">PRECIOS</a></li> 
-    <li className="tsuite--li"><a href="#nosotros">NOSOTROS</a></li> 
-    <li className="tsuite--li"><a href="#blog">BLOG</a></li> 
+    <li className="tsuite--li"><Link to="/tsuite/about">ACELERADOR DE RESERVAS</Link></li>
+    <li className="tsuite--li"><Link to="#artificial">INTELIGENCIA ARTIFICIAL</Link></li>
+    <li className="tsuite--li"><Link to="#producto">PRODUCTO</Link></li> 
+    <li className="tsuite--li"><Link to="#precios">PRECIOS</Link></li> 
+    <li className="tsuite--li"><Link to="#nosotros">NOSOTROS</Link></li> 
+    <li className="tsuite--li"><Link to="#blog">BLOG</Link></li> 
   </ul>
 </div>
   <div className="--dropdown">
