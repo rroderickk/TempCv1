@@ -16,20 +16,20 @@ const imgstyle = {
   left: `${!props.left? "0px":props.left}`,
   top: `${!props.top? "0px":props.top}`,
 };
-
+console.log({props});
 return (  <>
 <HeaderTsuite/>
 
 <main className="tsuite-about--container">
   <BannerHeader/>
-  {props.children[0]  ||
-  <NaviLinks a="about" rutaA="/tsuite/about" b="Analizador de reservas" rutaB="/tsuite" c="" rutaC=""/>}
+  {props.children} 
+  {/* <NaviLinks a="about" rutaA="/tsuite/about" b="Analizador de reservas" rutaB="/tsuite" c="" rutaC=""/>} */}
 
 <div className="tsuite-aboutmain--container">
   {
     <div className="tsuite-aboutmain--imgcontainer"> 
       <img className="aboutmain--img" alt="img-about" 
-        src={props.children[2] || prueba} style={imgstyle}/>
+        src={props.children[1] || prueba} style={imgstyle}/>
     </div>
   }
 
