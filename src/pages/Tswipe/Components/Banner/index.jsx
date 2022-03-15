@@ -20,4 +20,4 @@ const Banner =(props)=> { return ( <>
 </div>
 {/* <p> </p> */} {/*fancy separation*/ }
 
-</> ) }; export default Banner;
+</> ) }; export { Banner};

@@ -81,7 +81,7 @@ return (
 
 <Route exact path="/tsuite/systems/fancycrimes" 
   element={
-  <TsuiteAbout imagen={<Arrayimgs index="fancycrimes"/>} 
+  <TsuiteAbout back="takuya" imagen={<Arrayimgs index="fancycrimes"/>} 
     title={ <TitleRight sup="systems" title="fancy" sub="crimes"/>}
       paragraph={<FancyCrimes/>}  paragraph2={<FancyCrimes2/>}>
     <NaviLinks a="Systems" rutaA="/tsuite" b="FancyCrimes" rutaB="/tsuite/systems/fancycrimes" c="" rutaC=""/>
