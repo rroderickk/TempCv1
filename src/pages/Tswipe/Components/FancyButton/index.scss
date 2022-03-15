@@ -13,11 +13,6 @@
   color: white !important;
 }
 
-.fancy-red:hover{background-color: crimson !important; }
-.fancy-salmon:hover{background-color: salmon !important; }
-.fancy-orange:hover{background-color: orange !important; }
-.fancy-crims:hover{background-color: var(--custoncrimson) !important; }
-
 .fancy-span{
   display: inline-block;
   width: 60px;
@@ -27,3 +22,9 @@
   top: 20px;
   transform: translate(-60px);
 }
+
+.fancy-red:hover   { background-color: crimson            !important; }
+.fancy-salmon:hover{ background-color: salmon             !important; }
+.fancy-orange:hover{ background-color: orange             !important; }
+.fancy-crims:hover { background-color: var(--customcrimson) !important; }
+

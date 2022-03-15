@@ -47,5 +47,8 @@ const TsuiteBody =({children})=> { return ( <>
     </Banner>
   </div>
 </div>
+<FancyButton text="design system" spa="2px" color="white" bg="" bor="crimson" fancy="crimson"
+  link="/tsuite/systems/fancycrimes"  c4="true"
+/>
 {children}
 </> ) }; export { TsuiteBody};

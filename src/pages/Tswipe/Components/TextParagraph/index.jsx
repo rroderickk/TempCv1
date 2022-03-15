@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import { TsuiteBody } from "../TsuiteBody";
 import { TsuiteMain } from "../TsuiteMain";
+import { FancyCrimes, FancyCrimes2 } from "./FancyCrimes";
 
 const TextParagraph1 =()=> { return (<>
 <p className="p1">El algoritmo de Turbosuite aprovecha la clasificación de datos eficaces para generar pronósticos confiables, el primer paso incluye el análisis de la cantidad y calidad de las reservas. Medimos los porcentajes de ocupación, rendimiento, ADR y RevPAR. Así podremos fijar un objetivo, segmentar el mercado y crear una estrategia más eficaz y obtener un producto más versátil a la hora de venderse. <br/>-Estructura tarifaria por canal de venta.
@@ -33,12 +34,12 @@ Desde incremento de ingresos y ganancias, pasando por la subida de ocupación me
 <ul>
   <li><b>37.60%Incremento de ingresos</b> promedio de cada unidad turística a través del inventario disponible en Turbosuite.</li>
   <li><b>31.00% Incremento de rendimientos a properties</b> promedio para cada property manager y hoteleros que utilizan Turbosuite.</li>
-  <li><b>84 Incremento en ranking web en Booking.com</b>promedio para cada cada unidad turística a través del inventario disponible en Turbosuite.</li>
-  <li><b>14.30% Incremento de precio ADR</b>Promedio para cada property manager y hoteleros que utilizan Turbosuite.</li>
-  <li><b>24 Noches Ocupación media</b>De cada unidad turística y hoteles independientes conectados a Turbosuite.</li>
+  <li><b>84 Incremento en ranking web en Booking.com</b> promedio para cada cada unidad turística a través del inventario disponible en Turbosuite.</li>
+  <li><b>14.30% Incremento de precio ADR</b> promedio para cada property manager y hoteleros que utilizan Turbosuite.</li>
+  <li><b>24 Noches Ocupación media</b> de cada unidad turística y hoteles independientes conectados a Turbosuite.</li>
   <li><b>15+ Horas semanales ahorradas</b> tanto en comparaciones con competidores y sesiones de entrenamiento con OTAs.</li>
 </ul>
 <h2>Hacer revenue no es sencillo, lo sabemos, somos TURBOSUITE somos property managers.</h2>
-<Link style={{color: "orange"}} to="/">PRUEBA LA DEMO</Link>
-</p> </>)}; export {  TextParagraph1, TextParagraph2 };
+<Link style={{color: "orange"}} className="global-paddings-buttoncomunnity1" to="/">PRUEBA LA DEMO</Link>
+</p> </>)}; export {  TextParagraph1, TextParagraph2, FancyCrimes, FancyCrimes2 };
 
