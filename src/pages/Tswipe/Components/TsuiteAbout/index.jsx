@@ -4,6 +4,7 @@ import { BannerHeader  } from "../BannerHeader";
 import { NaviLinks     } from "../NaviLinks";
 import { TitleRight    } from "../TitleRight";
 import "./index.scss";
+import { FramerMotion } from "../FramerMotion";
 
 const TsuiteAbout =(props)=> { window.scrollTo(0,0); 
 const imgstyle ={
@@ -14,7 +15,9 @@ const imgstyle ={
   //// padding: `${!props.padding? "4rem 0rem":props.padding}`,
   //// margin: `${!props.margin? "1rem 0rem":props.margin}`,
 };
-return (  <>
+
+return (  <> <FramerMotion>
+
 <HeaderTsuite/>
 <main className="tsuite-about--container">
   <BannerHeader/>
@@ -26,12 +29,9 @@ return (  <>
     <div className={`background-config background-img--${props.img || "dos"}`} alt="img-about" style={imgstyle}></div>}
  </div>
 
-
-
 <div className="aboutmain-title--container fadeInRightBig">
   {props.title  || <TitleRight sup="01" title="Analizador" sub="de reservas"/>}
 </div>
-
 
 {props.paragraph  ?? <p className="p1">436 caracteres Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat quas laudantium, consequatur ea quae dignissimos suscipit fugit aliquid, nesciunt expedita soluta nulla quaerat veritatis facilis ab blanditiis. Maiores, suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat quas laudantium, consequatur ea quae dignissimos suscipit fugit aliquid, nesciunt expedita soluta nulla quaerat 436</p>}
 {props.paragraph2 ?? <p className="p2">Lorem ipsum dpisicing elit. Ipsam fugiat quas laudantium, consequatur ea quae dignissimos suscipit fugit aliquid, nesciunt expedita soluta nulla quaerat veritatis facilis ab blanditiis. Maiores, suscipit
@@ -40,6 +40,6 @@ Lorem ipsum dolor sit r adipisicing elit. Ipsam fugiat quas laudantium, consequa
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat quas laudantium, consequatur ea quae dignissimos suscipit fugit aliquid, nesciunt expedita soluta nulla quaerat veritatis facilis ab blanditiis. Maiores, suscipit.|</p>}
 </div>
 
-
 </main>
-</> ) }; export { TsuiteAbout};
+
+</FramerMotion> </> ) }; export { TsuiteAbout};
