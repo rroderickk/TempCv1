@@ -5,6 +5,8 @@ import {Banner} from "../Banner";
 import { NaviLinks       } from "../NaviLinks";
 import "./index.scss";
 
+import { FramerMotion } from "../FramerMotion";
+
 
 const FancyCrimes =()=> { return (<>
   <p className="p1">Introduccion a sistemas de diseño, fancycrimes es la version v0.0.1
@@ -23,6 +25,7 @@ const FancyCrimes2 =()=> { return (<>
   <div className="global-paddings-buttoncomunnity3">Fancycrimes</div>
   <TitleRight  sup="reutilizable" title="title" sub="Crimes"/>
 </p>
+
 <div className="caja-design-sistems">
   <Banner num="02" text="banner" info="reutilizable">
     <FancyButton text="estudio reutilizable" spa="3px" color="black" bg="limegreen" bor="black"
@@ -36,7 +39,16 @@ const FancyCrimes2 =()=> { return (<>
   <FancyButton text="botonReutilizable" spa="5px" color="orange" bg="" bor="orange" link="/"/>
   <FancyButton text="botonReutilizable" spa="5px" color="green"  bg="" bor="salmon" link="/"/>
   <NaviLinks a="navireuti" rutaA="/tsuite" b="lizable" rutaB="/tsuite" c="" rutaC=""/>
-</div>
 
-</>) };
+<FramerMotion>
+  <div className="plugins">
+    hola
+  </div>
+</FramerMotion>
+
+
+
+
+
+</div> </>) };
 export { FancyCrimes, FancyCrimes2};

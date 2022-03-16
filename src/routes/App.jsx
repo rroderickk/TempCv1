@@ -12,8 +12,8 @@ import { TitleRight      } from "@pages/Tswipe/Components/TitleRight";
 import { NaviLinks       } from "@pages/Tswipe/Components/NaviLinks";
 import { TextParagraph1, TextParagraph2, FancyCrimes, FancyCrimes2 } from "@pages/Tswipe/Components/TextParagraph";
 
-import img from "@assets/assetsTsuite/tsuite.png";
 import { Arrayimgs } from '../pages/Tswipe/Components/TsuiteAbout/arrayimgs';
+import { FramerMotion } from '../pages/Tswipe/Components/FramerMotion';
 
 const App =()=> {
 const initialState = useInitialState();
@@ -23,6 +23,7 @@ return (
 <AppContext.Provider value={initialState} >
 <BrowserRouter basename="/TempCv1">
   <Layout>
+  <FramerMotion>
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/udea" element={<Udea />} />
@@ -78,7 +79,7 @@ return (
   <TsuiteAbout imagen={<Arrayimgs index="cero"/>}
     title={ <TitleRight sup="about" title="informacion" sub="de contacto"/>}
       paragraph={<TextParagraph1/>}  paragraph2={<TextParagraph2/>}>
-    <NaviLinks a="about" rutaA="/tsuite" b="contacto" rutaB="/tsuite/about/contacto" c="" rutaC=""/>
+     <NaviLinks a="about" rutaA="/tsuite" b="contacto" rutaB="/tsuite/about/contacto" c="" rutaC=""/>
   </TsuiteAbout >} 
 />
 
@@ -87,13 +88,14 @@ return (
   <TsuiteAbout back="takuya" imagen={<Arrayimgs index="fancycrimes"/>} 
     title={ <TitleRight sup="systems" title="fancy" sub="crimes"/>}
       paragraph={<FancyCrimes/>}  paragraph2={<FancyCrimes2/>}>
-    <NaviLinks a="Systems" rutaA="/tsuite" b="FancyCrimes" rutaB="/tsuite/systems/fancycrimes" c="" rutaC=""/>
+     <NaviLinks a="Systems" rutaA="/tsuite" b="FancyCrimes" rutaB="/tsuite/systems/fancycrimes" c="" rutaC=""/>
   </TsuiteAbout >} 
 />
 
 
       <Route exact path="*" element={<NotFound/>} />
     </Routes>
+   </FramerMotion>
   </Layout>
 </BrowserRouter>
 </AppContext.Provider>
