@@ -3,8 +3,8 @@ import { HeaderTsuite  } from "../HeaderTsuite";
 import { BannerHeader  } from "../BannerHeader";
 import { NaviLinks     } from "../NaviLinks";
 import { TitleRight    } from "../TitleRight";
+import { FramerMotion  } from "../FramerMotion";
 import "./index.scss";
-import { FramerMotion } from "../FramerMotion";
 
 const TsuiteAbout =(props)=> { window.scrollTo(0,0); 
 const imgstyle ={
