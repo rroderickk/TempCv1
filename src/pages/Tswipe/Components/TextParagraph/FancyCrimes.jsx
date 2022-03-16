@@ -5,7 +5,7 @@ import {Banner} from "../Banner";
 import { NaviLinks       } from "../NaviLinks";
 import "./index.scss";
 
-import { FramerMotion } from "../FramerMotion";
+import { Box } from "../Box";
 
 
 const FancyCrimes =()=> { return (<>
@@ -40,14 +40,8 @@ const FancyCrimes2 =()=> { return (<>
   <FancyButton text="botonReutilizable" spa="5px" color="green"  bg="" bor="salmon" link="/"/>
   <NaviLinks a="navireuti" rutaA="/tsuite" b="lizable" rutaB="/tsuite" c="" rutaC=""/>
 
-<FramerMotion>
-  <div className="plugins">
-    hola
-  </div>
-</FramerMotion>
-
-
-
+  <Box p="1rem 1rem" color="black"></Box>
+  <Box p="1rem 1rem" color="crimson">soy la caja con children y color, p=padding, w=width, h=height</Box>
 
 
 </div> </>) };

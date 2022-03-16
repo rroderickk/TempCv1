@@ -2,7 +2,6 @@ import React from "react";
 import {HeaderTsuite} from "./Tswipe/Components/HeaderTsuite";
 import {TsuiteMain} from "./Tswipe/Components/TsuiteMain";
 import {TsuiteBody} from "./Tswipe/Components/TsuiteBody";
-import {TsuiteAbout} from "./Tswipe/Components/TsuiteAbout";
 import "./resetStyles.scss";
 
 const Tswipe =()=> { window.scrollTo(0,0); return ( <>
