@@ -3,7 +3,7 @@ import "./index.scss";
 
 const TitleRight =(props)=> { return ( <>
 
-<div className="titleright-container">
+<div className="titleright-container fadeInRightBig">
   <h2>{props.sup}</h2>
   <h1> {props.title}</h1>
   <h3> {props.sub}</h3>

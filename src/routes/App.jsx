@@ -39,7 +39,7 @@ return (
 
 <Route exact path="/tsuite/about/estudio" 
   element={
-  <TsuiteAbout title={ 
+  <TsuiteAbout  imagen={<Arrayimgs index="tres"/>} title={ 
     <TitleRight sup="about" title="estudio" sub="de mercado"/>}
       paragraph={<TextParagraph1/>}  paragraph2={<TextParagraph2/>}>
      <NaviLinks a="about" rutaA="/tsuite" b="estudio de mercado" rutaB="/tsuite/about/estudio" c="" rutaC=""/>
@@ -48,14 +48,17 @@ return (
 
 <Route exact path="/tsuite/about/preciosdinamicos" 
   element={
-  <TsuiteAbout title={ <TitleRight sup="about" title="precios" sub="dinamicos"/>}
-    paragraph={<TextParagraph1/>}  paragraph2={<TextParagraph2/>}>
+  <TsuiteAbout  imagen={<Arrayimgs index="cuatro"/>} title={ 
+    <TitleRight sup="about" title="precios" sub="dinamicos"/>}
+      paragraph={<TextParagraph1/>}  paragraph2={<TextParagraph2/>}>
      <NaviLinks a="about" rutaA="/tsuite" b="precios dinamicos" rutaB="/tsuite/about/preciosdinamicos" c="" rutaC=""/>
   </TsuiteAbout >} 
 />
 
 <Route exact path="/tsuite/about/comparadordecanales" 
-  element={<TsuiteAbout title={ <TitleRight sup="about" title="comparador" sub="de canales"/>}
+  element={
+  <TsuiteAbout  imagen={<Arrayimgs index="cinco"/>} title={ 
+    <TitleRight sup="about" title="comparador" sub="de canales"/>}
       paragraph={<TextParagraph1/>}  paragraph2={<TextParagraph2/>}>
      <NaviLinks a="about" rutaA="/tsuite" b="comparador de canales" rutaB="/tsuite/about/comparadordecanales" c="" rutaC=""/>
   </TsuiteAbout >} 

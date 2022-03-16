@@ -28,7 +28,7 @@ Desde incremento de ingresos y ganancias, pasando por la subida de ocupación me
   <li>Controlador de rendimiento Por canal Para encontrar oportunidades.</li>
   <li>Paridad de precios En la distribución Para potenciar nuestro canal directo.</li> 
 </ul>
-<iframe height="600px" width="100%" src="https://www.youtube.com/embed/SJ4RLEAQa38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>
+<iframe height="530px" width="100%" src="https://www.youtube.com/embed/SJ4RLEAQa38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>
 
 <b style={{fontSize: "1.4rem"}}>Turbosuite sigue un proceso integral para incrementar reservas y posicionar las propiedades en lo más alto de cada destino.</b><br/>
 <ul>

@@ -28,7 +28,7 @@ return (  <>
 
 
 
-<div className="aboutmain-title--container">
+<div className="aboutmain-title--container fadeInRightBig">
   {props.title  || <TitleRight sup="01" title="Analizador" sub="de reservas"/>}
 </div>
 

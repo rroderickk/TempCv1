@@ -26,15 +26,17 @@
 .tsuite-aboutmain--imgcontainer {
   max-width: 510px; 
   height: 510px;
-  background-color: var(--background);
   margin: 30px 40px;
   overflow: hidden;
   justify-content: center;
-  outline: 1px solid var(--background);
+  // outline: 1px solid var(--background);
+  // background-color: var(--background);
   margin: 0 auto;
   width: 80%;
+  z-index: 1;
 }
 .tsuite-aboutmain--imgcontainer >img{ position: relative; }
+
 .aboutmain-title--container{
   width: 330px;
   min-width: 310px;
@@ -43,8 +45,12 @@
   margin: 36px auto;
   overflow: hidden;
 }
-
+.fadeInRightBig {
+  background-color: transparent;
+}
+    
 .aboutmain-title--container::before{ display: none;}
+
 .tsuite-aboutmain--container>.p1{
   color: grey;
   font-size: 1.1rem;
@@ -72,6 +78,7 @@
 
 @media screen and (min-width: 1110px){
   .tsuite-about--container{height: 100%;}
+
   .tsuite-aboutmain--container{ 
     padding-top: 0px; 
     margin: 0 auto;
@@ -86,8 +93,12 @@
     left: -2.8rem;
     align-self: baseline;
     margin: 0 0 0 10px; 
+    outline: 1px solid var(--background);
+    background-color: var(--background);
   }
+
   .tsuite-aboutmain--imgcontainer >img{ width: 100%; }
+
   .aboutmain-title--container{
     display: block;
     position: relative;
@@ -96,23 +107,36 @@
     max-height: 234px;
     margin: 0;
     padding: 0;
-  }
-  .aboutmain-title--container::before{ display: none; }
+    margin-top: -34px;
+  } .aboutmain-title--container::before{ display: none; }
+
   .tsuite-aboutmain--container>.p1{
     display: flex;
     min-height: 290px;
     max-height: 314px;
     overflow: hidden;
     position: relative;
-    top: -568px;
+    top: -554px;
     padding-left: 31rem;
   }
   .tsuite-aboutmain--container>.p2{ 
-    top: -560px; 
+    top: -520px; 
+  }
+  .fadeInRightBig {
+    background-color: var(--background);
+    z-index: 0;
   }
 }
+
 @media screen and (min-width: 1199px){
   .tsuite-aboutmain--container{ padding-top: 0px; }
+
+  .tsuite-aboutmain--imgcontainer{ // margin-top: -35px; //   z-index: 9999991; 
+  }
+
+  .aboutmain-title--container{
+    margin-top: -34px;
+  }
   .aboutmain-title--container::before{
     content: " ";
     display: inline-block;
@@ -121,5 +145,10 @@
     background-color: red;
     width: 440px;
     height: 4px;
+  }
+
+  .fadeInRightBig {
+    background-color: var(--background);
+    z-index: 0;
   }
 }
