@@ -2,12 +2,9 @@
   min-width: 300px;
   position: fixed;
   top: 0; 
-  z-index: 9999;
-  background-color: #000000;
+  // background-color: var(--background);
   background-image: linear-gradient(025deg, #000000 28%, #414141 94%);
   justify-content: space-between;
-  // outline: 1px solid orange;
-  // box-shadow: 1px 1px 14px orange;
 }
 .header-tsuite--nav >:nth-child(1){
   object-fit: contain;
@@ -35,13 +32,11 @@
 }
 
 .header-tsuite--container{
-  // display: none;
   flex-direction: row;
   color: white;
   text-decoration: none;
 }
 .tsuite--ul{
-  // display: none;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -49,26 +44,53 @@
   width: 90%;
 }
 .tsuite--li{
-  // display: none;
   padding: 0 0.4rem;
   color: white;
   text-decoration: none;
 }
+
 .btnmenu{
   position: relative;
-  left: -40px;
-  width: 40px;
-  height: 40px;
-  background-image: url("@assets/assetsTsuite/menu.png");
-  margin-top: 0.8rem;
+  width: 30px;
+  height: 30px;
+  background-image: url("@assets/assetsTsuite/menu1.svg");
+  margin-top: 0.5rem;
+  margin-left: 20px;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 1;
+}
+.--dropdown button{
+  font-weight: bold;
+  font-size: 0.6rem;
+  font-family: var(--source);
+  padding-top: 22px;
+  font-weight: 600;
+  color: black;
+  padding-left: 6px;
+  z-index: 4;
 }
 
+.--dropdown >span{
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50px, -80px);
+  background-image: url("../HeaderTsuite/bg-hamburguesa.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.--dropdown button:hover{
+  color: black;
+}
 .btnmenu:hover{
   background-image: url("@assets/assetsTsuite/menu2.svg");
-  transition: 1s;
+  transition: 0.2s ease-in-out;
 }
+
 .--dropbtn {
   background-color: transparent;
   color: white;
@@ -76,6 +98,7 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+
 }
 /* Dropdown button on hover & focus */
 .--dropbtn:hover, .--dropbtn:focus {
@@ -109,11 +132,17 @@
 }
 
 /* Change color of dropdown links on hover */
-.--dropdown-content a:hover {background-color: #ddd}
+.--dropdown-content a:hover{
+  background-color: #ddd;
+  color: crimson;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-
+ul li a:hover{
+  color: crimson;
+  text-shadow: 1px 1px 1px var(--customgris);
+}
 
 @media screen and (min-width: 1199px){ 
   .header-tsuite--nav{
@@ -124,9 +153,9 @@
     justify-content: center;
     height: 6rem;
     background-color: #000000;
-    background-image: none;
-    // background-color: transparent;
     // background-image: none;
+    // background-color: transparent;
+    // backdrop-filter: blur(122px);
     font-weight: bold;
     z-index: 99999;
   }
@@ -147,7 +176,7 @@
   } 
   .header-tsuite--logo:hover{
     filter: saturate(1030%);
-  filter:  blur(0.59px) contrast(195%) brightness(10003%);
+    filter:  blur(0.59px) contrast(195%) brightness(10003%);
 
   }
   .--dropdown-content { left: -220px; }
@@ -172,7 +201,13 @@
   ul li a{
     margin-right: 2rem;
   }
-  
+  ul li a:hover{
+    color: crimson;
+    text-shadow: 1px 1px 1px var(--customgris);
+  }
+
+  .--dropdown span{ display: none; }
+
   .tsuite--ul>:nth-child(6){
     border-right: none;
   }
@@ -180,7 +215,7 @@
     background-image: url("@assets/assetsTsuite/menu.png");
   }
 }
-.--dropdown-content { 
+.--dropdown-content{ 
   left: -200px; 
   margin-top: 0.2rem;
   background-color: var(--oscuroUdea);
@@ -190,10 +225,11 @@
   color: white;
 }
 
-.--dropdown-content a:hover {
+.--dropdown-content a:hover{
   background-color: #000000;
   background-image: linear-gradient(300deg, #000000 20%, #414141 74%, #000000 100%);
 }
+
 
 @media screen and (max-width: 736px){ 
   .header-tsuite--nav{
@@ -201,4 +237,8 @@
     z-index: 9999;
   }
   .tsuite--ul{ display: none; }
+  ul li a:hover{
+    color: crimson;
+    text-shadow: 1px 1px 1px var(--customgris);
+  }
 }

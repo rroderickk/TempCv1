@@ -35,7 +35,7 @@ const HeaderTsuite =()=> { return ( <>
   </ul>
 </div>
   <div className="--dropdown">
-    <button onClick={()=>myFunction()} className="--dropbtn btnmenu"> </button>
+    <button onClick={()=>myFunction()} className="--dropbtn btnmenu">MENU</button><span></span>
       <div id="myDropdown" className="--dropdown-content">
       <Link to="/tsuite/about/analizador">ACELERADOR DE RESERVAS</Link>
       <Link to="/tsuite/about/contacto">INTELIGENCIA ARTIFICIAL</Link>
