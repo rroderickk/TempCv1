@@ -100,7 +100,7 @@ footer span{
 
 .a--udea{ 
   width: 120%;
-  background-image: url("../../pages/Udea.src/integratic_logo.png");
+  background-image: url("@logos/astronauts.svg");
   width: 80%;
   margin-left: -4px;
   margin-top: 0px;
@@ -112,10 +112,8 @@ footer span{
   height: 90px;
   max-width: 130px;
   max-height: 130px;
-  background-color: var(--udea);
+  background-color: black;
   border-radius: 100%;
-}.cudea:hover{
-  background-color: var(--oscuroUdea);
   box-shadow: -2px 2px 40px var(--udea), 0 0 80px #a945c7;
 }
 

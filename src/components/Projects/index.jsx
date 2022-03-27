@@ -23,9 +23,9 @@ const Projects =()=> { return ( <>
 <a className="a--container" href="https://rroderickk.github.io/professional" target="_blank" rel="noreferrer noopener">
   <div className="cprofessional"><span className="a--professional" /></div>
 </a>
-<Link className="a--container" to="/udea">
+<a className="a--container" href="https://rroderickk.github.io/platzibadges" target="_blank" rel="noreferrer noopener">
   <div className="cudea"><span className="a--udea" /></div>
-</Link>
+</a>
 <Link className="a--container" to="/tsuite">
   <div className="tsuite"><span className="a--tsuite" /></div>
 </Link>
