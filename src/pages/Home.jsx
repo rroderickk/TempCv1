@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"; import axios from "axios";
 import PunkList from "@components/PunkList"; import Main from "@components/Main";
 import Dataset from "../components/Dataset";
 import Projects from "../components/Projects";
+import useFirstHook from "./useFirstHook"; 
 
 const Home =()=> {
 const [punkListData, setPunkListData] = useState([]);
@@ -28,13 +29,19 @@ function u() {
   return getMyNft();
 };
 
+const { searchValue, setSearchValue, searchedText, } = useFirstHook();
+
 return ( <>
-<Header comprarNft={u}/>
+
+<Header comprarNft={u}
+  searchValue={searchValue} 
+  setSearchValue={setSearchValue}
+/>
 
 {
   punkListData.length>0 && (<>
     <Main punkListData={punkListData}     selectedPunk={selectedPunk}       />
-    <PunkList punkListData={punkListData} setSelectedPunk={setSelectedPunk} />
+    <PunkList punkListData={searchedText} setSelectedPunk={setSelectedPunk} />
   </>)
 }
 
