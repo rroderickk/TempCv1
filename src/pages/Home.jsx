@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@components/Header"; import CollectionCard from "../components/CollectionCard";
+import Header from "@components/Header";
 import { useState, useEffect } from "react"; import axios from "axios";
 import PunkList from "@components/PunkList"; import Main from "@components/Main";
 import Dataset from "../components/Dataset";
@@ -8,8 +8,9 @@ import useFirstHook from "./useFirstHook";
 
 const Home =()=> {
 const [punkListData, setPunkListData] = useState([]);
-const [selectedPunk, setSelectedPunk] = useState(0);
+const [selectedPunk, setSelectedPunk] = useState(2);
 const [selectedU, setSelectedU] = useState("");
+const { searchValue, setSearchValue, searchedText, } = useFirstHook();
 
 // console.log(Dataset.assets[0].id ,"$$$$"); //todo mejorar publicidad;
 
@@ -29,8 +30,6 @@ function u() {
   return getMyNft();
 };
 
-const { searchValue, setSearchValue, searchedText, } = useFirstHook();
-
 return ( <>
 
 <Header comprarNft={u}
@@ -38,13 +37,20 @@ return ( <>
   setSearchValue={setSearchValue}
 />
 
-{
-  punkListData.length>0 && (<>
-    <Main punkListData={punkListData}     selectedPunk={selectedPunk}       />
-    <PunkList punkListData={searchedText} setSelectedPunk={setSelectedPunk} />
-  </>)
+{ punkListData.length>0 && ( <>
+      <Main 
+        punkListData={punkListData} 
+        selectedPunk={selectedPunk}
+      />
+
+      <PunkList 
+        punkListData={searchedText} 
+        setSelectedPunk={setSelectedPunk} 
+      />
+    </>
+  )
 }
 
 <Projects/>
 
-</> ) }; export { Home};
+</> ) }; export { Home };

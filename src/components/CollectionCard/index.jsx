@@ -1,6 +1,8 @@
 import React from "react"; 
 import "./CollectionCard.scss" //!styles(@)==>
+
 const openTab =(link)=> window.open(link);
+
 const CollectionCard = ({ 
   id, 
   idinfo,
@@ -10,9 +12,10 @@ const CollectionCard = ({
   weth,
   urlPlatzi,
   idInfoENG, 
-}) => {
-return (
-<div className="collectionCard">
+ }) => {
+
+return ( <>
+<article className="collectionCard">
   <img className="imageCard" alt="coleccionImageCard" src={image} />
   <div className="details">
     <div className="name">
@@ -24,5 +27,5 @@ return (
       <div className="price">{trades[0]?.value}</div>
     </div>
   </div>
-</div>
-);  }; export default CollectionCard;
+</article>
+</> );  }; export default CollectionCard;

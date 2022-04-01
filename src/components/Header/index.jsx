@@ -7,14 +7,15 @@ import switchlogo from "@icons/switch.svg";
 const haha =()=> alert("hell yeah proximamente....!");
 const handleRef =(param)=> window.scrollTo(0, param);
 
-const Header =( 
- {comprarNft, searchValue, 
-    setSearchValue } )=> { 
+const Header =({
+  comprarNft, searchValue, 
+  setSearchValue 
+ })=> { 
 
   const onSearchValueChange =(e)=> setSearchValue(e.target.value);
 
 return ( <>
-<div className="header">
+<header className="header">
   <div className="logoContainer">
     <img src={punk} className="punklogo" onClick={()=> window.location.reload()} alt="PunkLogo"/>
   </div>
@@ -26,7 +27,7 @@ return ( <>
 
     <input autoFocus
       className="searchInput" 
-      placeholder="search..."
+      placeholder="Search..."
       onChange={onSearchValueChange}
       value={searchValue}
     />
@@ -38,10 +39,10 @@ return ( <>
     <p onClick={()=> { haha(); handleRef(1000)} }>Create</p>
       <div className="headerActions">
         <div className="themeSwitchContainer">
-          <img src={switchlogo} alt="switchLogo" onClick={()=>haha()}/>
+          <img src={switchlogo} alt="switchLogo" onClick={haha}/>
         </div>
       </div>
   </div>
-  <div className="loginButton" onClick={()=>haha()}>JOIN IN</div>
-</div>
+  <div className="loginButton" onClick={haha}>JOIN IN</div>
+</header>
 </> ) }; export default Header;

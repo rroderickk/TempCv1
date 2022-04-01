@@ -4,9 +4,9 @@ import platzi from "@logos/platzi.svg";
 import "./PunkList.css";
 
 const PunkList =({ punkListData, setSelectedPunk })=> { return (
-  <div className="punkList">
+  <main className="punkList">
     {punkListData.map( punk=> (
-      <div onClick={()=> setSelectedPunk(punk.token_id)} key={punk.token_id}>
+      <section onClick={()=> setSelectedPunk(punk.token_id)} key={punk.token_id}>
         <CollectionCard
           key={punk.token_id}
           idinfo={punk.id}
@@ -19,7 +19,7 @@ const PunkList =({ punkListData, setSelectedPunk })=> { return (
           urlPlatzi={punk.urlPlatzi}
           idInfoENG={punk.idENG}
         />
-      </div>
+      </section>
     ))}
-  </div>
+  </main>
 ); }; export default PunkList;

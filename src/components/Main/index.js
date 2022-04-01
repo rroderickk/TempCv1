@@ -6,12 +6,18 @@ import instagram from "@icons/instagram.svg"; import { useState, useEffect } fro
 
 const openTab =(link)=> window.open(link);
 
-const Main = ({ selectedPunk, punkListData }) => { 
-const [activePunk, setActivePunk] = useState(punkListData[0]);
+const Main = ({ 
+  selectedPunk, 
+  punkListData 
+ })=> { 
+  const [activePunk, setActivePunk] = useState(punkListData[0]);
 
-useEffect( () => { setActivePunk(punkListData[selectedPunk]) }, [punkListData, selectedPunk]);
-return (
-<div className="main">
+  useEffect( ()=> { 
+    setActivePunk(punkListData[selectedPunk]) 
+  }, [punkListData, selectedPunk]);
+
+return ( <>
+<section className="main">
   <div className="mainContent">
     <div className="punkHighlight">
       <div className="punkContainer">
@@ -19,7 +25,7 @@ return (
           alt="selectedPunk"
           // src="https://lh3.googleusercontent.com/soR6JAuB0k-X3Az9G8-NJG9Cfoc4kyfgPUCYVtp6Ker9QQSHg9UQA52eFduoL_v_E5dHnnaB3LtZjBIAZdH6p5e2rLOm7aVm6eVoMg=s0"
           src={activePunk.image_original_url}
-          onClick={activePunk.urlGh?()=>openTab(activePunk.urlGh):null}
+          onClick={activePunk.urlGh? ()=>openTab(activePunk.urlGh) : null}
         />
       </div>
     </div>
@@ -33,21 +39,36 @@ return (
       </div>
       <div className="ownerDetail">
         <div className="ownerNameAndHandle">
-          <div className="ownerAdress">RodrigoMoreno socialMedia </div>
-          <div className="ownerHandle">@cheatmodes4</div>
+          <div className="ownerAdress">Rodrigo Moreno social Media </div>
+          <div className="ownerHandle">@CheatModes4</div>
         </div>
         <div className="ownerSocialContain">
           <div className="ownerLink"> 
-            <img onClick={()=>openTab("https://github.com/rroderickk")} src={github} alt="socialMedia"/> </div>
+            <img 
+              onClick={()=>openTab("https://github.com/rroderickk")} 
+              src={github} alt="socialMedia"
+            />
+            </div>
           <div className="ownerLink"> 
-            <img onClick={()=>openTab("https://www.linkedin.com/in/rodrigo-moreno-rr")} src={linkedin} alt="socialMedia"/> </div>
+            <img onClick={()=>openTab("https://www.linkedin.com/in/rodrigo-moreno-rr")} 
+              src={linkedin} 
+              alt="socialMedia"
+            /> 
+            </div>
           <div className="ownerLink"> 
-            <img onClick={()=>openTab("https://twitter.com/cheatmodes4")} src={twitter} alt="socialMedia"/> </div>
+            <img onClick={()=>openTab("https://twitter.com/cheatmodes4")} 
+              src={twitter} 
+              alt="socialMedia"
+            /> 
+            </div>
           <div className="ownerLink"> 
-            <img onClick={()=>openTab("https://www.instagram.com/rodrigomorenop/")} src={instagram} alt="socialMedia"/> </div>
+            <img onClick={()=>openTab("https://www.instagram.com/rodrigomorenop/")} 
+              src={instagram} 
+              alt="socialMedia"/> 
+            </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-); }; export default Main;
+</section>
+</> ); }; export default Main;

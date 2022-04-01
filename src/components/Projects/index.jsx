@@ -4,7 +4,7 @@ import "./index.scss";
 
 const Projects =()=> { return ( <> 
 
-<footer className="footer--container"><h6>Projects Links =()=></h6>
+<footer className="footer--container"><h6>Projects Links =()={'>'}</h6>
 <a className="a--container" href="https://rroderickk.github.io/firstapp1" target="_blank" rel="noreferrer noopener">
   <span className="a--firstapp1" /> 
 </a>
