@@ -12,7 +12,7 @@ import { TitleRight      } from "@pages/Tswipe/Components/TitleRight";
 import { NaviLinks       } from "@pages/Tswipe/Components/NaviLinks";
 import { TextParagraph1, TextParagraph2, FancyCrimes, FancyCrimes2 } from "@pages/Tswipe/Components/TextParagraph";
 
-import { Arrayimgs    } from '../pages/Tswipe/Components/TsuiteAbout/arrayimgs';
+import { Arrayimgs    } from '../pages/Tswipe/Components/TsuiteAbout/Arrayimgs';
 import { FramerMotion } from '../pages/Tswipe/Components/FramerMotion';
 
 const App =()=> {

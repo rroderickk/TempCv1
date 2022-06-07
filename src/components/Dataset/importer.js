@@ -11,7 +11,7 @@ import py 				 from "./python.png";
 import responsive  from "./mobilefirst.png";
 import typescriptI from "./typescript.png";
 import typescriptA from "./typescript2.png";
-import reactjs 		 from "./reactjs.png";
+import reactjs 		 from "./Reactjs.png";
 
 export {
 	reacjs, node, javascript, nest,
