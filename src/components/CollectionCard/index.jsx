@@ -15,7 +15,7 @@ const CollectionCard =({
  })=> <>
 
 <article className="collectionCard">
-  <img className="imageCard" alt="coleccionImageCard" src={image} />
+  <img className="imageCard" alt="coleccionImageCard" src={image}/>
   <div className="details">
 
     <div className="name">
@@ -23,12 +23,12 @@ const CollectionCard =({
       <p className="idinfo">{ typeof(idinfo)==="number" ? idinfo : idInfoENG }</p></div>
     </div>
 
-    <div className="priceContainer">
-      <UseAnchor anchor={urlPlatzi}>
-        <img className="wethImage" alt="wethImage" src={weth} />
-      </UseAnchor>
-      <div className="price">{trades[0]?.value}</div>
-    </div>
+    <UseAnchor anchor={urlPlatzi}>
+      <div className="priceContainer">
+        <img className="wethImage" alt="wethImage" src={weth}/>
+        <div className="price">{trades[0]?.value}</div>
+      </div>
+    </UseAnchor>
 
   </div>
 </article>
