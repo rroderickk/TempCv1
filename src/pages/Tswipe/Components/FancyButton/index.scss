@@ -1,0 +1,30 @@
+.fancy-button--a{
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: -60px;
+}
+
+.fancy-button--a:hover{
+  background-color: var(--background) !important;
+  transition: 0.4s all ease-in-out;
+  border: none !important;
+  color: white !important;
+}
+
+.fancy-span{
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  position: relative;
+  left: 22px;
+  top: 20px;
+  transform: translate(-60px);
+}
+
+.fancy-red:hover   { background-color: crimson            !important; }
+.fancy-salmon:hover{ background-color: salmon             !important; }
+.fancy-orange:hover{ background-color: orange             !important; }
+.fancy-crims:hover { background-color: var(--customcrimson) !important; }
+

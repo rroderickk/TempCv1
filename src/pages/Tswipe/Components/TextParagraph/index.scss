@@ -1,0 +1,14 @@
+.caja-design-sistems{
+  width: 80%;
+  padding-left: 60px;
+}
+@media screen and (min-width: 1110px){
+  .caja-design-sistems{
+    position: relative;
+    top: -500px;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 60px;
+  }
+}

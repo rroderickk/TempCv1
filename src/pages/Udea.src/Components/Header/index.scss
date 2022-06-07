@@ -1,0 +1,133 @@
+nav{
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  min-width: 280px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--udea);
+  font-family: "Raleway";
+  z-index: 99999;
+}
+
+.Navbar-Fixed > :nth-child(1){
+  object-fit: contain;
+}
+.Navbar-logo{
+  width: 10rem;
+  margin-left: 1rem;
+}
+.Navbar-container{
+  display: none;
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+}
+.Navbar-ul{
+  display: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.Navbar-li{
+  display: none;
+  padding: 0 0.4rem;
+  color: white;
+  text-decoration: none;
+}
+button{
+  position: relative;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../hamburger-menu-ico.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  // background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -110px;
+  background-color: var(--udea);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media screen and (min-width: 736px){
+  button{ display: none; left: -100px; }
+  .dropdown-content { left: -220px; }
+  .Navbar-container{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 100vp;
+    // margin-right: -40rem;
+  }
+
+  .Navbar-ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .Navbar-li{
+    display: flex;
+    padding: 0 0.4rem;
+  }
+  .Navbar-logo{
+    margin-left: 4rem;
+  }
+  nav{
+    justify-content: space-between;
+  }
+  a{
+    position: inline-block;
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: var(--grisUdea);
+  }
+}

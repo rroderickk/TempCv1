@@ -1,0 +1,46 @@
+.background-config{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin: auto;
+  position: relative;
+  display: flex;
+  color: transparent;
+  height: 510px;
+  // width: 510px;
+}
+.background-img--cero{
+  background-image: url("@assets/assetsTsuite/tsuite.png");
+}
+.background-img--uno{
+  background-image: url("../Banner/pronos.png");
+}
+.background-img--dos{
+  background-image: url("../Banner/ar2.png");
+}
+.background-img--fancycrimes{
+  background-image: url("../Banner/fancycrimes.jpg");
+}
+.background-img--tres{
+  background-image: url("../Banner/ar.png");
+}
+.background-img--cuatro{
+  background-image: url("../Banner/precios.png");
+}
+.background-img--cinco{
+  background-image: url("../Banner/comparador.png");
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1110px){
+  .background-config{
+    width: 510px;
+  }
+}

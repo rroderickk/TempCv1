@@ -1,0 +1,71 @@
+.tsuite-bannerheader--container{
+  background: transparent url("./bg-bannerheader2.jpg") no-repeat;
+  filter: grayscale(10%);
+  background-position: top center;
+  background-size: cover !important;
+  position: relative;
+  display: block;
+  height: 300px;
+  top: 30px;
+  z-index: 1;
+}
+.tsuite-banner--img{
+  background: var(--oscuroUdea) url("@assets/assetsTsuite/tsuite.svg") no-repeat;
+  filter: opacity(50%);
+  background-position: center center;
+  background-size: 80%;
+  position: relative;
+  min-height: 150px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+}
+.tsuite-banner--span{
+  background: transparent url("@assets/assetsTsuite/tsuite.svg") no-repeat;
+  filter: opacity(20%);
+  background-position: left;
+  background-size: 880%;
+  min-height: 150px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+}
+.tsuite--prop{
+  color: var(--customcrimson);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 9px;
+  align-items: center;
+  transform: translate(0, -90px);
+  font-weight: 500;
+  position: inherit;
+  height: 0;
+  font-family: var(--barlow);
+  z-index: inherit;
+}
+.tsuite--prop::after{
+  content: " ";
+  display: none;
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  vertical-align: super;
+}
+.tsuite--prop::before{
+  content: " ";
+  margin-left: 4rem;
+  margin-right: 8px;
+  display: none;
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  vertical-align: super;
+}
+
+@media screen and (min-width: 1110px){
+  .tsuite-banner--img{ background-position: center 50px; }
+  .tsuite-banner--span{ background-size: 180%; }
+  .tsuite--prop{ font-size: 20px;   transform: translate(0px, -40px);}
+  .tsuite--prop::after{   display: inline-block; width: 120px; }
+  .tsuite--prop::before{  display: inline-block; width: 120px;}
+}

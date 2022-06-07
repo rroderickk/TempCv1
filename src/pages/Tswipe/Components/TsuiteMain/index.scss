@@ -1,0 +1,114 @@
+.tsuite-main--container{
+  min-width: 300px;
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 11rem;
+  width: 100%;
+  font-family: "Roboto", "Source Sans Pro", sans-serif, Arial, Helvetica;
+  // text-transform: uppercase;
+}
+
+.tsuite--carrousel{
+  min-width: 300px;
+  position: relative;
+  color: white;
+  z-index: 1;
+  width: 100%;
+  // background-color: #f39f86;
+  // background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  padding-top: 1rem;
+}
+.tsuite--carrousel .h1{
+  min-width: 28px;
+  max-width: 700px;
+  text-align: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  margin: 0 auto;
+  text-shadow: 2px 2px 3px black;
+}
+.textRelativo {
+  font-size: 63.3%;
+}
+.learnmore--container{
+  justify-content: center;
+  justify-items: center;
+  // margin: 0 auto;
+  margin-left: -65px;
+  margin-top: 2.2rem;
+  min-width: 200px;
+}
+.b--learnmore{
+  border: 1px solid #ffffffff;
+  padding: 1.3rem 2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+}
+.b--learnmore:hover{
+  background-color: var(--background);
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+.i--container{
+  display: none;
+}
+.fancy{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 60px;
+  height: 1px;
+  transform: translateX(20px) translateY(-2px);;
+  background-color: white;
+}
+
+@media screen and (min-width: 1199px){ 
+  .tsuite-main--container{
+    top: 11rem;
+    // margin-top: 4rem ;
+  }
+  .tsuite--carrousel .h1{
+    justify-content: center;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    text-justify: auto;
+  }
+  .b--learnmore{
+    padding: 1.3rem 4rem;
+  }
+  .i--container{
+    display: block;
+    position: relative;
+    top: 130px;
+    transform: rotate(90deg) translateX(120px);
+  }
+  .i--flechita:hover{
+    background-color: crimson;
+    border: transparent;
+    animation-name: example;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  .i--flechita{
+    position: relative;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    overflow: hidden;
+    box-sizing: content-box;
+  }
+  
+}
+@media screen and (min-width: 1199px){}

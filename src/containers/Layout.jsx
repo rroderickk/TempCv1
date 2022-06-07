@@ -1,8 +1,12 @@
-import "./Layout.scss"
-//╦  ┌─┐┬ ┬┌─┐┬ ┬┌┬┐
-//║  ├─┤└┬┘│ ││ │ │
-//╩═╝┴ ┴ ┴ └─┘└─┘ ┴
-const Layout = ({ children }) => {
-return (
-<div className="Layout" className="Layout">{children}</div>
-);  }; export default Layout;
+import React from "react";
+import { FramerMotion } from "../pages/Tswipe/Components/FramerMotion";
+
+import "./Layout.scss";
+
+const Layout =({ children })=>
+
+<FramerMotion>
+	<div className="Layout">{children} </div> 
+</FramerMotion>
+
+export { Layout };

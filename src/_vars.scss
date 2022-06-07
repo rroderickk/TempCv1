@@ -1,11 +1,69 @@
 /* Root keys */
 :root {
-	--white: #ffffff;
+	--white: #FFFFFF;
 	--black: #000000;
 	--very-light-pink: #c7c7c7;
 	--text-input-field: #f7f7f7;
 	--hospital-green: #acd9b2;
-	--sm: 14px;
-	--md: 16px;
-	--lg: 18px;
+	--udea:#054973;
+	--grisUdea: #dee2e6;
+	--oscuroUdea: #00000080;
+	--background: #181819;
+	--black1: #1b1b1b;
+	--customcrimson: #e51937;
+	--customgris: #4E4E4E;
+	--customgris2: #D7D7D7;
+	--customgris3: #a0a0a0;
+	--sm: 1.4rem;
+	--md: 1.6rem;
+	--lg: 1.8rem;
+	--ex: 2rem;
+	--ex1: 2.4rem;
+	--ex2: 3rem;
+	--ex3: 6.2rem;
+	--barlow: "Barlow Semi Condensed";
+	--source: "Source Sans Pro";
+
+
+/*global-button-classes-paddings*/
+	--padding-spacesm: 0.4rem 0.9rem;
+	--padding-spacemd: 0.8rem 1.9rem;
+	--padding-spacebg: 1.3rem 1.7rem;
+}
+*{
+	scroll-behavior: smooth;
+}
+/* light-theme, paddings */
+.global-paddings-button1      { padding: var(--padding-spacesm); background-color: var(--customgris2); font-family: var(--barlow); font-size: 1rem;   text-decoration: none; border-radius: 1px; margin: 1px; cursor:pointer; color: var(--customgris)!important; color:orange!important};
+.global-paddings-button2      { padding: var(--padding-spacemd); background-color: var(--customgris2); font-family: var(--barlow); font-size: 1.3rem; text-decoration: none; border-radius: 1px; margin: 1px; cursor:pointer; color: var(--customgris)!important; color:orange!important};
+.global-paddings-button3      { padding: var(--padding-spacebg); background-color: var(--customgris2); font-family: var(--barlow); font-size: 1.6rem; text-decoration: none; border-radius: 1px; margin: 1px; cursor:pointer; color: var(--customgris)!important; color:orange!important};
+
+.global-paddings-button1:hover{ font-weight: bold;  background-color: var(--customgris3); color:white!important;};
+.global-paddings-button2:hover{ font-weight: bold;  background-color: var(--customgris3); color:white!important;};
+.global-paddings-button3:hover{ font-weight: bold;  background-color: var(--customgris3); color:white!important;};
+
+.global-paddings-button1:active{ background-color: var(--customgris); color: var(--customcrimson) !important;};
+.global-paddings-button2:active{ background-color: var(--customgris); color: var(--customcrimson) !important;};
+.global-paddings-button3:active{ background-color: var(--customgris); color: var(--customcrimson) !important;};
+
+/* light-theme, comunnnity */
+.global-paddings-buttoncomunnity1       { border-radius: 40px; padding: var(--padding-spacesm); background-color: transparent; font-family: var(--barlow); font-size: 1.3rem; text-decoration: none; margin: 3px; outline: 1.3px solid orange; cursor:pointer; };
+.global-paddings-buttoncomunnity2       { border-radius: 40px; padding: var(--padding-spacemd); background-color: transparent; font-family: var(--barlow); font-size: 1.7rem; text-decoration: none; margin: 3px; outline: 1.7px solid orange; cursor:pointer; };
+.global-paddings-buttoncomunnity3       { border-radius: 40px; padding: var(--padding-spacebg); background-color: transparent; font-family: var(--barlow); font-size: 2.1rem; text-decoration: none; margin: 3px; outline: 2.1px solid orange; cursor:pointer; };
+
+.global-paddings-buttoncomunnity1:hover { background-color: var(--customgris2); outline: 1.3px solid transparent; color: var(--customgris) !important;};
+.global-paddings-buttoncomunnity2:hover { background-color: var(--customgris2); outline: 1.7px solid transparent; color: var(--customgris) !important;};
+.global-paddings-buttoncomunnity3:hover { background-color: var(--customgris2); outline: 2.1px solid transparent; color: var(--customgris) !important;};
+
+.global-paddings-buttoncomunnity1:active { color: var(--customcrimson)!important;};
+.global-paddings-buttoncomunnity2:active { color: var(--customcrimson)!important;};
+.global-paddings-buttoncomunnity3:active { color: var(--customcrimson)!important;};
+
+/* CustomTakya */
+.takuya{
+	background-color: rgb(236, 242, 254)!important;
+}
+
+.hometuls{
+	background-image: linear-gradient(45deg, #E9765B 0%, #FFC06A 100%);
 }

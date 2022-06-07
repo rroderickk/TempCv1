@@ -1,0 +1,46 @@
+div .footer-container--banner{
+  width: 100vp;
+  margin-top: 4px;
+  padding-bottom: 10px;
+  box-shadow: rgb(0 0 0 / 28%) -4px -4px 4px;
+  border-radius: 22px;
+}
+.footer-banner{
+  width: 100%;
+}
+.footer-container--cards{
+  width: 100vp;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.card{
+  width: 65%;
+  margin-bottom: 19px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 22px;
+}
+.card:hover{
+  margin: 0 -40px;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 736px) {
+  div .footer-container--banner{
+    margin-top: 44px;
+    box-shadow:  -4px -9px 18px var(--grisUdea);
+  }
+  .footer-container--cards{
+    justify-content: center;
+    display: flex;
+    margin-top: 4px ;
+    margin-bottom: 140px;
+  }
+  .card{
+    width: 80%;
+    margin: 0 -40px;
+  }
+}

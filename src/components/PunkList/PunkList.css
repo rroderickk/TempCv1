@@ -5,13 +5,23 @@
   margin-top: 4px;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 
 .punkList::-webkit-scrollbar {
-  width: 20px !important;
-  /* //display: none !important; */
-  /* // -ms-overflow-style: none; */
-  /* // scrollbar-width: none; */
+  height: 4px;
+  width: 10%;
+  z-index:1;
+}
+.punkList::-webkit-scrollbar-thumb {
+  border-radius: 100%;
+  width: 10%;
+  background-color: rgb(255, 238, 7);
+}
+.punkList::-webkit-scrollbar-corner {
+  border-radius: 100%;
 }
 
 .punkList::-webkit-scrollbar:hover {
@@ -24,5 +34,6 @@
     display: block;
     align-items: center;
     object-fit: contain;
+    margin: 20px;
   }
 }

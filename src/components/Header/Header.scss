@@ -41,7 +41,7 @@
   outline: none;
   color: #eee;
   font-size: 20px;
-  font-family: Inconsolata;
+  font-family: "Hack Nerd Font";
 }
 .searchIconContainer > img {
   margin-left: 18px;
@@ -95,8 +95,9 @@
   font-family: Inconsolata;
 }
 @media (max-width: 640px) {
-  .punklogo { width: 100px; height: 90px; }
-  .header { display: inline-block; }
+  .punklogo    { width: 100px; height: 90px; }
+  .searchBar   { width: auto; }
+  .header      { display: inline-block; }
   .searchInput { width: 100%; }
   .loginButton { padding: 13px 13px; height: 16px; }
 }
