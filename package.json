@@ -1,7 +1,7 @@
 {
   "name": "cv1reactjs",
-  "version": "0.0.2",
-  "description": "cv1Reactjs",
+  "version": "0.0.3",
+  "description": "cv1ReactJs",
   "hompage": "https://rroderickk.github.io/TempCv1",
   "main": ".src/index.js",
   "scripts": {
@@ -18,7 +18,10 @@
   "keywords": [
     "react",
     "javascript",
-    "shop"
+    "thirdweb",
+    "tropy",
+    "platzi",
+    "soloLearn"
   ],
   "author": "CheatModes4 rroderickk@gmail.com",
   "license": "MIT",

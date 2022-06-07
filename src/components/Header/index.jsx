@@ -1,16 +1,16 @@
-import React, {useState} from "react"; 
+import React from "react"; 
 import "./Header.scss";
 import punk from "@logos/punk.png";
 import searchIcon from "@icons/searchIcon2.svg";
 import switchlogo from "@icons/switch.svg";
 
 const haha =()=> alert("hell yeah proximamente....!");
-const handleRef =(param)=> window.scrollTo(0, param);
+const handleRef =param=> window.scrollTo(0, param);
 
 const Header =({
   comprarNft, searchValue, 
   setSearchValue 
- })=> { 
+ })=> {
 
   const onSearchValueChange =(e)=> setSearchValue(e.target.value);
 

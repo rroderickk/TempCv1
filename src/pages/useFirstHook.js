@@ -1,24 +1,23 @@
-import React from "react";
+import { useState } from "react";
 import Dataset from "../components/Dataset";
 
 const useFirstHook =()=> {
-  const [searchValue, setSearchValue] = React.useState('');
+	const [searchValue, setSearchValue] = useState('');
 
-  let searchedText = [];
+	let searchedText = [];
 
-  if (!searchValue.length >= 1) { searchedText = Dataset.assets; } 
-    else {
-    searchedText = Dataset.assets.filter(obj => {
-      const todoText = obj.idENG.toLowerCase();
-      const searchText = searchValue.toLowerCase();
-      return todoText.includes(searchText);
-    });
-  };
+	if (!searchValue.length >= 1) searchedText = Dataset.assets;
 
-  return {
-    searchValue,
-    setSearchValue, 
-    searchedText,
-  } 
+	else {
+		searchedText = Dataset.assets.filter(obj=> {
+
+			const todoText = obj.idENG.toLowerCase();
+			const searchText = searchValue.toLowerCase();
+
+			return todoText.includes(searchText);
+		});
+	};
+
+	return { searchValue, setSearchValue, searchedText, }
 
 }; export default useFirstHook;

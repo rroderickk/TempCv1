@@ -1,19 +1,18 @@
-
-import React from "react"; 
+import React, { useState, useEffect } from "react"; 
 import "./Main.scss"; import yo from "@logos/il.jpg"; import linkedin from "@icons/linked.svg";
 import github from "@icons/github.svg"; import twitter from "@icons/twitter.svg";
-import instagram from "@icons/instagram.svg"; import { useState, useEffect } from "react";
+import instagram from "@icons/instagram.svg";
 
-const openTab =(link)=> window.open(link);
+const openTab =link=> window.open(link);
 
-const Main = ({ 
-  selectedPunk, 
-  punkListData 
- })=> { 
+const Main =({
+  selectedPunk,
+  punkListData
+ })=> {
   const [activePunk, setActivePunk] = useState(punkListData[0]);
 
-  useEffect( ()=> { 
-    setActivePunk(punkListData[selectedPunk]) 
+  useEffect(()=> { 
+    setActivePunk(punkListData[selectedPunk])
   }, [punkListData, selectedPunk]);
 
 return ( <>
@@ -44,27 +43,27 @@ return ( <>
         </div>
         <div className="ownerSocialContain">
           <div className="ownerLink"> 
-            <img 
+            <img
               onClick={()=>openTab("https://github.com/rroderickk")} 
               src={github} alt="socialMedia"
             />
             </div>
-          <div className="ownerLink"> 
-            <img onClick={()=>openTab("https://www.linkedin.com/in/rodrigo-moreno-rr")} 
-              src={linkedin} 
+          <div className="ownerLink">
+            <img onClick={()=>openTab("https://www.linkedin.com/in/rodrigo-moreno-rr")}
+              src={linkedin}
               alt="socialMedia"
             /> 
             </div>
-          <div className="ownerLink"> 
-            <img onClick={()=>openTab("https://twitter.com/cheatmodes4")} 
-              src={twitter} 
+          <div className="ownerLink">
+            <img onClick={()=>openTab("https://twitter.com/cheatmodes4")}
+              src={twitter}
               alt="socialMedia"
             /> 
             </div>
-          <div className="ownerLink"> 
-            <img onClick={()=>openTab("https://www.instagram.com/rodrigomorenop/")} 
-              src={instagram} 
-              alt="socialMedia"/> 
+          <div className="ownerLink">
+            <img onClick={()=>openTab("https://www.instagram.com/rodrigomorenop/")}
+              src={instagram}
+              alt="socialMedia"/>
             </div>
         </div>
       </div>
