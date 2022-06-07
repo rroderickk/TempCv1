@@ -7,10 +7,9 @@ body{
   text-align: center;
   background-color: #000; 
   height: 150vp;
-  min-height: 100vh;
-  max-width: 100vp;
+  min-height: 100%;
   min-width: 300px; //!
-  // margin: 20px; //!
+  margin: 28px 20px; //!
 }
 *{
   scroll-behavior: smooth;
@@ -19,6 +18,9 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
-// .Layout > div:hover {
-// 	box-shadow: 0 0 9em #fff, inset 0 0 9rem #fff, 0 0 0 green;
-// }
+
+@media (max-width: 640px) {
+  .Layout {
+    margin: 0px 0px; //!
+  }
+}

@@ -8,7 +8,7 @@ const PunkList =({ punkListData, setSelectedPunk })=>
     { punkListData.map(punk=> (
       <section onClick={()=> setSelectedPunk(punk.token_id)} key={punk.token_id}>
 
-        <CollectionCard key={punk.token_id}
+        <CollectionCard
           idinfo={punk.id}
           id={punk.token_id}
           name={punk.name}
